@@ -1,4 +1,5 @@
 import React from 'react';
+import AppBar from './AppBar'
 import logo from './cover.JPG';
 import './App.css';
 
@@ -6,10 +7,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Welcome to Tetelle's website.
+          Hello World!
         </p>
+        <AppBar />
+      </header>
+      <body>
+        <img src={logo} className="App-logo" alt="logo" />
         <a
           className="App-link"
           href="https://www.linkedin.com/in/estellebarnoud/?locale=en_US"
@@ -18,7 +22,7 @@ function App() {
         >
           LinkedIn profile
         </a>
-      </header>
+      </body>
     </div>
   );
 }
