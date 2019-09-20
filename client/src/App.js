@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './cover.JPG';
 import './App.css';
 
 function App() {
@@ -8,15 +8,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Welcome to Tetelle's website.
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.linkedin.com/in/estellebarnoud/?locale=en_US"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          LinkedIn profile
         </a>
       </header>
     </div>
