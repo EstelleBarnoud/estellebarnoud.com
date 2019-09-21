@@ -1,7 +1,7 @@
 import React from 'react';
-import AppBar from './AppBar'
+import AppBar from './AppBar';
+import Cover from './Cover.js';
 import './App.css';
-import cover from './cover.JPG';
 import { createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <AppBar />
-        <img src={cover} className="App-cover" alt="cover" />
+        <Cover />
       </header>
       <body>
         <a
