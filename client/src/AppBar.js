@@ -37,13 +37,6 @@ export default function HideAppBar(props) {
       </HideOnScroll>
       <Toolbar />
       <Container>
-        <Box my={2}>
-          {[...new Array(2)]
-            .map(
-              () => `Test: Lorem ipsum`,
-            )
-            .join('\n')}
-        </Box>
       </Container>
     </React.Fragment>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import AppBar from './AppBar'
-import logo from './cover.JPG';
+import cover from './cover.JPG';
 import './App.css';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <AppBar />
       </header>
       <body>
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={cover} className="App-cover" alt="cover" />
         <a
           className="App-link"
           href="https://www.linkedin.com/in/estellebarnoud/?locale=en_US"
