@@ -1,11 +1,11 @@
 import React from 'react';
-import AppBar from './AppBar';
+import { createMuiTheme } from '@material-ui/core/styles';
+import AppBar from './AppBar.js';
 import Cover from './Cover.js';
 import Contact from './Contact.js';
 import About from './About.js';
 import Experience from './Experience.js';
 import './App.css';
-import { createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
   palette: {
