@@ -1,5 +1,6 @@
 import React from 'react';
 import { Divider, Button, Container } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import profile from './profile.png';
 
 const styles = {
@@ -21,12 +22,24 @@ const styles = {
     description: {
         textAlign: 'left',
     },
-    button: {
-        
-    }
 }
 
+const useStyles = makeStyles({
+    root: {
+      background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+      border: 0,
+      borderRadius: 3,
+      boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+      color: 'white',
+      height: 48,
+      padding: '0 30px',
+      margin: '2%',
+    },
+  });
+
 export default function About() {
+    const classes = useStyles();
+
     return(
         <Container style={styles.container}>
             <div style={styles.box}>
@@ -45,7 +58,7 @@ export default function About() {
                         Hi there! I am an Engineer based on New York. I am to finish my second Master of Science at Columbia in December 2020 and I currently work as a Business Analyst in a cybersecurity startup.
                     </p>
                 </div>
-                <Button style={styles.button}>
+                <Button className={classes.root}>
                     Learn more
                 </Button>
             </div>
