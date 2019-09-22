@@ -2,7 +2,8 @@ import React from 'react';
 import AppBar from './AppBar';
 import Cover from './Cover.js';
 import Contact from './Contact.js';
-import About from './About.js'
+import About from './About.js';
+import Experience from './Experience.js';
 import './App.css';
 import { createMuiTheme } from '@material-ui/core/styles';
 
@@ -29,6 +30,7 @@ function App() {
       </header>
       <body>
         <About />
+        <Experience />
         <Contact />
       </body>
     </div>

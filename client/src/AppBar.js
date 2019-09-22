@@ -44,6 +44,7 @@ export default function HideAppBar(props) {
             <Typography variant="h6">Hello World!</Typography>
             <div style={styles.buttons}>
                 <Button color="inherit">About me</Button>
+                <Button color="inherit">Experience</Button>
                 <Button color="inherit">Projects</Button>
             </div>
           </Toolbar>
