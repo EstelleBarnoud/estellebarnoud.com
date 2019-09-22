@@ -1,6 +1,7 @@
 import React from 'react';
 import AppBar from './AppBar';
 import Cover from './Cover.js';
+import Contact from './Contact.js'
 import './App.css';
 import { createMuiTheme } from '@material-ui/core/styles';
 
@@ -26,14 +27,7 @@ function App() {
         <Cover />
       </header>
       <body>
-        <a
-          className="App-link"
-          href="https://www.linkedin.com/in/estellebarnoud/?locale=en_US"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn profile
-        </a>
+        <Contact />
       </body>
     </div>
   );
