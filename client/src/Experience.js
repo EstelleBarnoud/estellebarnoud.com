@@ -8,6 +8,24 @@ import NatureIcon from '@material-ui/icons/Eco';
 import SportIcon from '@material-ui/icons/FitnessCenter';
 import ToolIcon from '@material-ui/icons/Build';
 import HeartIcon from '@material-ui/icons/Favorite';
+import telecom from './telecom.png';
+import columbia from './columbia2.png';
+
+const styles = {
+    img: {
+        height: '80px',
+    },
+    container: {
+        width: '100%',
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+    },
+    content: {
+        marginTop: '10%',
+    }
+}
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -76,8 +94,16 @@ export default function Experience() {
                 <Tab icon={<HeartIcon />} label="Passions" {...a11yProps(5)} />
             </Tabs>
             <TabPanel value={value} index={0}>
-                <Container>
-                    Columbia University in the City of New York
+                <Container style={styles.container}>
+                    <div>
+                        <img src={columbia} style={styles.img} alt="Columbia logo" />
+                        <p>Master of Science in Management Science &amp; Engineering</p>
+                    </div>
+                    <div style={styles.content}>
+                        <img src={telecom} style={styles.img} alt="Telecom logo" />
+                        <p>Diplôme d’ingénieur – equivalent to BS &amp; MS</p>
+                        <i>Master Specilization: Data Science | Entrepreneurship</i>
+                    </div>
                 </Container>            
             </TabPanel>
             <TabPanel value={value} index={1}>
