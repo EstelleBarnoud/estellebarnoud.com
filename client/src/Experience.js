@@ -10,10 +10,21 @@ import ToolIcon from '@material-ui/icons/Build';
 import HeartIcon from '@material-ui/icons/Favorite';
 import telecom from './telecom.png';
 import columbia from './columbia2.png';
+import cybelangel from './cybelangel2.png';
+import gates from './gates-foundation.webp';
+import bcv from './bluecloud2.png';
+import mad from './mad.png';
+import miedepain from './miedepain.png';
 
 const styles = {
+    img_ed: {
+        maxHeight: '80px',
+    },
     img: {
-        height: '80px',
+        flexBasis: '20%',
+        maxHeight: '80px',
+        maxWidth: '200px',
+        margin: '5% 0%',
     },
     container: {
         width: '100%',
@@ -21,10 +32,16 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-around',
+        maxHeight: '800px',
     },
     content: {
+        display: 'flex',
+        flexDirection: 'row',
+    },
+    space: {
         marginTop: '10%',
-    }
+    },
+
 }
 
 function TabPanel(props) {
@@ -96,21 +113,43 @@ export default function Experience() {
             <TabPanel value={value} index={0}>
                 <Container style={styles.container}>
                     <div>
-                        <img src={columbia} style={styles.img} alt="Columbia logo" />
+                        <img src={columbia} style={styles.img_ed} alt="Columbia logo" />
                         <p>Master of Science in Management Science &amp; Engineering</p>
                     </div>
-                    <div style={styles.content}>
-                        <img src={telecom} style={styles.img} alt="Telecom logo" />
+                    <div style={styles.space}>
+                        <img src={telecom} style={styles.img_ed} alt="Telecom logo" />
                         <p>Diplôme d’ingénieur – equivalent to BS &amp; MS</p>
                         <i>Master Specilization: Data Science | Entrepreneurship</i>
                     </div>
                 </Container>            
             </TabPanel>
             <TabPanel value={value} index={1}>
-                Item Two
+                <Container style={styles.container}>
+                    <div style={styles.content}>
+                        <img src={cybelangel} style={styles.img} alt="CybelAngel logo" />
+                        <p>Business Analyst</p>
+                    </div>
+                    <div style={styles.content}>
+                        <img src={gates} style={styles.img} alt="Gates Foundation logo" />
+                        <p>Part-time Consultant</p>
+                    </div>
+                    <div style={styles.content}>
+                        <img src={bcv} style={styles.img} alt="Blue Cloud Ventures logo" />
+                        <p>Part-time Consultant</p>
+                    </div>
+                </Container>  
             </TabPanel>
             <TabPanel value={value} index={2}>
-                Item Three
+                <Container style={styles.container}>
+                    <div style={styles.content}>
+                        <img src={mad} style={styles.img} alt="Make A Difference logo" />
+                        <p>President and founder</p>
+                    </div>
+                    <div style={styles.content}>
+                        <img src={miedepain} style={styles.img} alt="La Mie de Pain logo" />
+                        <p>Volunteer</p>
+                    </div>
+                </Container>
             </TabPanel>
             <TabPanel value={value} index={3}>
                 Item Four
