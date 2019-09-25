@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Typography, Box, Tabs, Tab, Container } from '@material-ui/core';
+import { Typography, Box, Tabs, Tab, Container, Chip } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import SchoolIcon from '@material-ui/icons/School';
 import WorkIcon from '@material-ui/icons/BusinessCenter';
@@ -41,7 +41,15 @@ const styles = {
     space: {
         marginTop: '10%',
     },
-
+    root: {
+        display: 'flex',
+        justifyContent: 'center',
+        flexWrap: 'wrap',
+        marginBottom: '5%',
+      },
+    chip: {
+        margin: 2,
+    },
 }
 
 function TabPanel(props) {
@@ -152,7 +160,38 @@ export default function Experience() {
                 </Container>
             </TabPanel>
             <TabPanel value={value} index={3}>
-                Item Four
+                <Container style={styles.container}>
+                    <p>Programming &amp; Machine Learning</p>
+                    <div style={styles.root}>
+                        <Chip variant='outlined' label='Python' style={styles.chip} />
+                        <Chip variant='outlined' label='sklearn' style={styles.chip} />
+                        <Chip variant='outlined' label='pandas' style={styles.chip} />
+                        <Chip variant='outlined' label='R' style={styles.chip} />
+                        <Chip variant='outlined' label='Java' style={styles.chip} />
+                        <Chip variant='outlined' label='SQL' style={styles.chip} />
+                    </div>
+                    <p>OS &amp; version control</p>
+                    <div style={styles.root}>
+                        <Chip variant='outlined' label='Linux' style={styles.chip} />
+                        <Chip variant='outlined' label='Windows' style={styles.chip} />
+                        <Chip variant='outlined' label='Git' style={styles.chip} />
+                    </div>
+                    <p>Web Development</p>
+                    <div style={styles.root}>
+                        <Chip variant='outlined' label='HTML' style={styles.chip} />
+                        <Chip variant='outlined' label='CSS' style={styles.chip} />
+                        <Chip variant='outlined' label='Javascript' style={styles.chip} />
+                        <Chip variant='outlined' label='JSX' style={styles.chip} />
+                        <Chip variant='outlined' label='React' style={styles.chip} />
+                        <Chip variant='outlined' label='Redux' style={styles.chip} />
+                    </div>
+                    <p>Software</p>
+                    <div style={styles.root}>
+                        <Chip variant='outlined' label='Power BI' style={styles.chip} />
+                        <Chip variant='outlined' label='Excel' style={styles.chip} />
+                        <Chip variant='outlined' label='Salesforce' style={styles.chip} />  
+                    </div>
+                </Container>
             </TabPanel>
             <TabPanel value={value} index={4}>
                 Item Five
