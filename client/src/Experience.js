@@ -21,10 +21,11 @@ const styles = {
         maxHeight: '80px',
     },
     img: {
-        flexBasis: '20%',
+        //flexBasis: '20%',
         maxHeight: '80px',
         maxWidth: '200px',
-        margin: '5% 0%',
+        height: '100%',
+        margin: '1% 5%',
     },
     container: {
         width: '100%',
@@ -33,23 +34,33 @@ const styles = {
         flexDirection: 'column',
         justifyContent: 'space-around',
         maxHeight: '800px',
+        margin: '0 auto',
+    },
+    panel: {
+        width: '100%',
+    },
+    description:{
+        //flexGrowth: 4,
     },
     content: {
         display: 'flex',
         flexDirection: 'row',
     },
     space: {
-        marginTop: '10%',
+        marginTop: '5%',
     },
     root: {
         display: 'flex',
         justifyContent: 'center',
         flexWrap: 'wrap',
-        marginBottom: '5%',
+        marginBottom: '1%',
       },
     chip: {
         margin: 2,
     },
+    subtitle: {
+        fontSize: '14px',
+    }
 }
 
 function TabPanel(props) {
@@ -118,7 +129,7 @@ export default function Experience() {
                 <Tab icon={<ToolIcon />} label="Projects" {...a11yProps(4)} />
                 <Tab icon={<HeartIcon />} label="Passions" {...a11yProps(5)} />
             </Tabs>
-            <TabPanel value={value} index={0}>
+            <TabPanel value={value} index={0} style={styles.panel}>
                 <Container style={styles.container}>
                     <div>
                         <img src={columbia} style={styles.img_ed} alt="Columbia logo" />
@@ -131,7 +142,7 @@ export default function Experience() {
                     </div>
                 </Container>            
             </TabPanel>
-            <TabPanel value={value} index={1}>
+            <TabPanel value={value} index={1} style={styles.panel}>
                 <Container style={styles.container}>
                     <div style={styles.content}>
                         <img src={cybelangel} style={styles.img} alt="CybelAngel logo" />
@@ -147,21 +158,21 @@ export default function Experience() {
                     </div>
                 </Container>  
             </TabPanel>
-            <TabPanel value={value} index={2}>
+            <TabPanel value={value} index={2} style={styles.panel}>
                 <Container style={styles.container}>
                     <div style={styles.content}>
                         <img src={mad} style={styles.img} alt="Make A Difference logo" />
-                        <p>President and founder</p>
+                        <p style={styles.description}>President and founder</p>
                     </div>
                     <div style={styles.content}>
                         <img src={miedepain} style={styles.img} alt="La Mie de Pain logo" />
-                        <p>Volunteer</p>
+                        <p style={styles.description}>Volunteer</p>
                     </div>
                 </Container>
             </TabPanel>
-            <TabPanel value={value} index={3}>
+            <TabPanel value={value} index={3} style={styles.panel}>
                 <Container style={styles.container}>
-                    <p>Programming &amp; Machine Learning</p>
+                    <p style={styles.subtitle}>Programming &amp; Machine Learning</p>
                     <div style={styles.root}>
                         <Chip variant='outlined' label='Python' style={styles.chip} />
                         <Chip variant='outlined' label='sklearn' style={styles.chip} />
@@ -170,13 +181,13 @@ export default function Experience() {
                         <Chip variant='outlined' label='Java' style={styles.chip} />
                         <Chip variant='outlined' label='SQL' style={styles.chip} />
                     </div>
-                    <p>OS &amp; version control</p>
+                    <p style={styles.subtitle}>OS &amp; version control</p>
                     <div style={styles.root}>
                         <Chip variant='outlined' label='Linux' style={styles.chip} />
                         <Chip variant='outlined' label='Windows' style={styles.chip} />
                         <Chip variant='outlined' label='Git' style={styles.chip} />
                     </div>
-                    <p>Web Development</p>
+                    <p style={styles.subtitle}>Web Development</p>
                     <div style={styles.root}>
                         <Chip variant='outlined' label='HTML' style={styles.chip} />
                         <Chip variant='outlined' label='CSS' style={styles.chip} />
@@ -185,7 +196,7 @@ export default function Experience() {
                         <Chip variant='outlined' label='React' style={styles.chip} />
                         <Chip variant='outlined' label='Redux' style={styles.chip} />
                     </div>
-                    <p>Software</p>
+                    <p style={styles.subtitle}>Software</p>
                     <div style={styles.root}>
                         <Chip variant='outlined' label='Power BI' style={styles.chip} />
                         <Chip variant='outlined' label='Excel' style={styles.chip} />
@@ -193,13 +204,13 @@ export default function Experience() {
                     </div>
                 </Container>
             </TabPanel>
-            <TabPanel value={value} index={4}>
+            <TabPanel value={value} index={4} style={styles.panel}>
                 Item Five
             </TabPanel>
-            <TabPanel value={value} index={5}>
+            <TabPanel value={value} index={5} style={styles.panel}>
                 Item Six
             </TabPanel>
-            <TabPanel value={value} index={6}>
+            <TabPanel value={value} index={6} style={styles.panel}>
                 Item Seven
             </TabPanel>
             </div>
