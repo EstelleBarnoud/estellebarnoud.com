@@ -133,11 +133,15 @@ export default function Experience() {
             <TabPanel value={value} index={0} style={styles.panel}>
                 <Container style={styles.container}>
                     <div>
-                        <img src={columbia} style={styles.img_ed} alt="Columbia logo" />
+                        <a style={styles.img} href="https://mse.ieor.columbia.edu/">
+                            <img src={columbia} style={styles.img_ed} alt="Columbia logo" />
+                        </a>
                         <p>Master of Science in Management Science &amp; Engineering</p>
                     </div>
                     <div style={styles.space}>
-                        <img src={telecom} style={styles.img_ed} alt="Telecom logo" />
+                        <a style={styles.img} href="https://www.telecom-paris.fr/">
+                            <img src={telecom} style={styles.img_ed} alt="Telecom logo" />
+                        </a>
                         <p>Diplôme d’ingénieur – equivalent to BS &amp; MS</p>
                         <i>Master Specilization: Data Science | Entrepreneurship</i>
                     </div>
@@ -146,15 +150,21 @@ export default function Experience() {
             <TabPanel value={value} index={1} style={styles.panel}>
                 <Container style={styles.container}>
                     <div style={styles.content}>
-                        <img src={cybelangel} style={styles.img} alt="CybelAngel logo" />
+                        <a style={styles.img} href="https://cybelangel.com/">
+                            <img src={cybelangel} style={styles.img} alt="CybelAngel logo" />
+                        </a>
                         <p>Business Analyst</p>
                     </div>
                     <div style={styles.content}>
-                        <img src={gates} style={styles.img} alt="Gates Foundation logo" />
+                        <a style={styles.img} href="https://www.gatesfoundation.org/">
+                            <img src={gates} style={styles.img} alt="Gates Foundation logo" />
+                        </a>
                         <p>Part-time Consultant</p>
                     </div>
                     <div style={styles.content}>
-                        <img src={bcv} style={styles.img} alt="Blue Cloud Ventures logo" />
+                        <a style={styles.img} href="www.bluecloudventures.com/">
+                            <img src={bcv} style={styles.img} alt="Blue Cloud Ventures logo" />
+                        </a>
                         <p>Part-time Consultant</p>
                     </div>
                 </Container>  
@@ -162,11 +172,15 @@ export default function Experience() {
             <TabPanel value={value} index={2} style={styles.panel}>
                 <Container style={styles.container}>
                     <div style={styles.content}>
-                        <img src={mad} style={styles.img} alt="Make A Difference logo" />
+                        <a style={styles.img} href="https://www.facebook.com/MakeADifferenceTPT/">
+                            <img src={mad} style={styles.img} alt="Make A Difference logo" />
+                        </a>
                         <p style={styles.description}>President and founder</p>
                     </div>
                     <div style={styles.content}>
-                        <img src={miedepain} style={styles.img} alt="La Mie de Pain logo" />
+                        <a style={styles.img} href="https://www.miedepain.asso.fr/">
+                            <img src={miedepain} style={styles.img} alt="La Mie de Pain logo" />
+                        </a>
                         <p style={styles.description}>Volunteer</p>
                     </div>
                 </Container>
@@ -208,7 +222,9 @@ export default function Experience() {
             <TabPanel value={value} index={4} style={styles.panel}>
                 <Container>
                     <div>
-                        <img src={ideescitoyennes} style={styles.img} alt="Idees citoyennes Logo" />
+                        <a href="https://github.com/EstelleBarnoud/sim_project">
+                            <img src={ideescitoyennes} style={styles.img} alt="Idees citoyennes Logo" />
+                        </a>
                         <h4>Founder, Product Developer &amp; Manager of Web Platform engaging citizens to participate</h4>
                         <ul>
                             <li>Benchmarked existing digital infrastructures and led survey on how citizens perceive their engagement</li>
@@ -216,7 +232,9 @@ export default function Experience() {
                         </ul>
                     </div>
                     <div>
-                        <img src={calm} style={styles.img} alt="CALM Logo" />
+                        <a href="https://perso.telecom-paristech.fr/ebarnoud/paf/dataviz.html">
+                            <img src={calm} style={styles.img} alt="CALM Logo" />
+                        </a>
                         <h4>Data Analyst for non-profit organization enabling citizens to host refugees | Télécom</h4>
                         <ul>
                             <li>Collaborated with non-profit organization CALM in 8-student team</li>
