@@ -1,5 +1,5 @@
 import React from 'react';
-import cover from './cover.JPG';
+import cover from './cover2.JPG';
 
 const styles = {
     img: {
