@@ -41,7 +41,7 @@ export default function About() {
     const classes = useStyles();
 
     return(
-        <Container style={styles.container}>
+        <Container id="about" style={styles.container}>
             <div style={styles.box}>
                 <img src={profile} className="App-profile" style={styles.img} alt="profile" />
             </div>

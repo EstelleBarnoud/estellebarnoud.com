@@ -42,7 +42,7 @@ export default function HideAppBar(props) {
           <Toolbar style={styles.bar}>
             <Typography edge='start' variant="h6" style={styles.hello}>Hello World!</Typography>
             <ButtonGroup fullWidth>
-                <Button color="inherit" style={styles.button}>About me</Button>
+                <Button color="inherit" href="#about" style={styles.button}>About me</Button>
                 <Button color="inherit" style={styles.button}>Experience</Button>
                 <Button color="inherit" style={styles.button}>Connect</Button>
             </ButtonGroup>
