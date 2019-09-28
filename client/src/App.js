@@ -28,11 +28,9 @@ function App() {
         <AppBar />
         <Cover />
       </header>
-      <body>
-        <About />
-        <Experience />
-        <Contact />
-      </body>
+      <About />
+      <Experience />
+      <Contact />
     </div>
   );
 }
