@@ -15,6 +15,8 @@ import gates from './gates-foundation.webp';
 import bcv from './bluecloud2.png';
 import mad from './mad.png';
 import miedepain from './miedepain.png';
+import ideescitoyennes from './ideescitoyennes.png';
+import calm from './calm.png';
 
 const styles = {
     img_ed: {
@@ -24,7 +26,6 @@ const styles = {
         //flexBasis: '20%',
         maxHeight: '80px',
         maxWidth: '200px',
-        height: '100%',
         margin: '1% 5%',
     },
     container: {
@@ -205,14 +206,29 @@ export default function Experience() {
                 </Container>
             </TabPanel>
             <TabPanel value={value} index={4} style={styles.panel}>
-                Item Five
+                <Container>
+                    <div>
+                        <img src={ideescitoyennes} style={styles.img} alt="Idees citoyennes Logo" />
+                        <h4>Founder, Product Developer &amp; Manager of Web Platform engaging citizens to participate</h4>
+                        <ul>
+                            <li>Benchmarked existing digital infrastructures and led survey on how citizens perceive their engagement</li>
+                            <li>Developed MVP web platform using opensource &amp; most used technologies <i>[JSX][React][Redux][Node.js][Django]</i></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src={calm} style={styles.img} alt="CALM Logo" />
+                        <h4>Data Analyst for non-profit organization enabling citizens to host refugees | Télécom</h4>
+                        <ul>
+                            <li>Collaborated with non-profit organization CALM in 8-student team</li>
+                            <li>Coded scripts to cleanse csv datasets <i>[Python]</i></li>
+                            <li>Produced relevant visualization interpretable for the association <i>[HTML/CSS/JavaScript]</i></li>
+                        </ul>
+                    </div>
+                </Container>
             </TabPanel>
             <TabPanel value={value} index={5} style={styles.panel}>
-                Item Six
+                <p>Violin, Piano, Singing, Rowing</p>
             </TabPanel>
-            <TabPanel value={value} index={6} style={styles.panel}>
-                Item Seven
-            </TabPanel>
-            </div>
+        </div>
     )
 }
