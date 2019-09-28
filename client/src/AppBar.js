@@ -1,16 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { AppBar, Toolbar, Typography, CssBaseline, useScrollTrigger, Slide, Button } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, CssBaseline, useScrollTrigger, Slide, Button, Container } from '@material-ui/core';
 
 const styles = {
     bar: {
         display: "flex",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        width: '100%',
     },
     buttons: {
-        //display: "flex",
-        //justifyContent: "space-around"
+        display: "flex",
+        justifyContent: "space-around",
     },
+    hello: {
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'flex-start',
+    },
+    button: {
+        padding: '2%',
+    }
 }
 
 function HideOnScroll(props) {
@@ -35,12 +44,12 @@ export default function HideAppBar(props) {
       <HideOnScroll {...props}>
         <AppBar>
           <Toolbar style={styles.bar}>
-            <Typography variant="h6">Hello World!</Typography>
-            <div style={styles.buttons}>
-                <Button color="inherit">About me</Button>
-                <Button color="inherit">Experience</Button>
-                <Button color="inherit">Projects</Button>
-            </div>
+            <Typography edge='start' variant="h6" style={styles.hello}>Hello World!</Typography>
+            <Container style={styles.buttons}>
+                <Button color="inherit" style={styles.button}>About me</Button>
+                <Button color="inherit" style={styles.button}>Experience</Button>
+                <Button color="inherit" style={styles.button}>Connect</Button>
+            </Container>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
