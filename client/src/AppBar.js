@@ -1,16 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { AppBar, Toolbar, Typography, CssBaseline, useScrollTrigger, Slide, Button, Container } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, CssBaseline, useScrollTrigger, Slide, Button, ButtonGroup } from '@material-ui/core';
 
 const styles = {
     bar: {
         display: "flex",
         justifyContent: "space-between",
         width: '100%',
-    },
-    buttons: {
-        display: "flex",
-        justifyContent: "space-around",
     },
     hello: {
         width: '100%',
@@ -45,11 +41,11 @@ export default function HideAppBar(props) {
         <AppBar>
           <Toolbar style={styles.bar}>
             <Typography edge='start' variant="h6" style={styles.hello}>Hello World!</Typography>
-            <Container style={styles.buttons}>
+            <ButtonGroup fullWidth>
                 <Button color="inherit" style={styles.button}>About me</Button>
                 <Button color="inherit" style={styles.button}>Experience</Button>
                 <Button color="inherit" style={styles.button}>Connect</Button>
-            </Container>
+            </ButtonGroup>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
