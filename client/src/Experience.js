@@ -133,13 +133,13 @@ export default function Experience() {
             <TabPanel value={value} index={0} style={styles.panel}>
                 <Container style={styles.container}>
                     <div>
-                        <a style={styles.img} href="https://mse.ieor.columbia.edu/" target="_blank" >
+                        <a style={styles.img} href="https://mse.ieor.columbia.edu/" target="_blank" rel="noopener noreferrer" >
                             <img src={columbia} style={styles.img_ed} alt="Columbia logo" />
                         </a>
                         <p>Master of Science in Management Science &amp; Engineering</p>
                     </div>
                     <div style={styles.space}>
-                        <a style={styles.img} href="https://www.telecom-paris.fr/" target="_blank" >
+                        <a style={styles.img} href="https://www.telecom-paris.fr/" target="_blank" rel="noopener noreferrer" >
                             <img src={telecom} style={styles.img_ed} alt="Telecom logo" />
                         </a>
                         <p>Diplôme d’ingénieur – equivalent to BS &amp; MS</p>
@@ -150,19 +150,19 @@ export default function Experience() {
             <TabPanel value={value} index={1} style={styles.panel}>
                 <Container style={styles.container}>
                     <div style={styles.content}>
-                        <a style={styles.img} href="https://cybelangel.com/" target="_blank" >
+                        <a style={styles.img} href="https://cybelangel.com/" target="_blank" rel="noopener noreferrer" >
                             <img src={cybelangel} style={styles.img} alt="CybelAngel logo" />
                         </a>
                         <p>Business Analyst</p>
                     </div>
                     <div style={styles.content}>
-                        <a style={styles.img} href="https://www.gatesfoundation.org/" target="_blank" >
+                        <a style={styles.img} href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer" >
                             <img src={gates} style={styles.img} alt="Gates Foundation logo" />
                         </a>
                         <p>Part-time Consultant</p>
                     </div>
                     <div style={styles.content}>
-                        <a style={styles.img} href="www.bluecloudventures.com/" target="_blank" >
+                        <a style={styles.img} href="www.bluecloudventures.com/" target="_blank" rel="noopener noreferrer" >
                             <img src={bcv} style={styles.img} alt="Blue Cloud Ventures logo" />
                         </a>
                         <p>Part-time Consultant</p>
@@ -172,13 +172,13 @@ export default function Experience() {
             <TabPanel value={value} index={2} style={styles.panel}>
                 <Container style={styles.container}>
                     <div style={styles.content}>
-                        <a style={styles.img} href="https://www.facebook.com/MakeADifferenceTPT/" target="_blank" >
+                        <a style={styles.img} href="https://www.facebook.com/MakeADifferenceTPT/" target="_blank" rel="noopener noreferrer" >
                             <img src={mad} style={styles.img} alt="Make A Difference logo" />
                         </a>
                         <p style={styles.description}>President and founder</p>
                     </div>
                     <div style={styles.content}>
-                        <a style={styles.img} href="https://www.miedepain.asso.fr/" target="_blank" >
+                        <a style={styles.img} href="https://www.miedepain.asso.fr/" target="_blank" rel="noopener noreferrer" >
                             <img src={miedepain} style={styles.img} alt="La Mie de Pain logo" />
                         </a>
                         <p style={styles.description}>Volunteer</p>
@@ -222,7 +222,7 @@ export default function Experience() {
             <TabPanel value={value} index={4} style={styles.panel}>
                 <Container>
                     <div>
-                        <a href="https://github.com/EstelleBarnoud/sim_project" target="_blank" >
+                        <a href="https://github.com/EstelleBarnoud/sim_project" target="_blank" rel="noopener noreferrer" >
                             <img src={ideescitoyennes} style={styles.img} alt="Idees citoyennes Logo" />
                         </a>
                         <h4>Founder, Product Developer &amp; Manager of Web Platform engaging citizens to participate</h4>
@@ -232,7 +232,7 @@ export default function Experience() {
                         </ul>
                     </div>
                     <div>
-                        <a href="https://perso.telecom-paristech.fr/ebarnoud/paf/dataviz.html" target="_blank" >
+                        <a href="https://perso.telecom-paristech.fr/ebarnoud/paf/dataviz.html" target="_blank" rel="noopener noreferrer" >
                             <img src={calm} style={styles.img} alt="CALM Logo" />
                         </a>
                         <h4>Data Analyst for non-profit organization enabling citizens to host refugees | Télécom</h4>
