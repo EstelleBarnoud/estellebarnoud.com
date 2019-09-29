@@ -114,7 +114,7 @@ export default function Experience() {
     };  
 
     return(
-        <div className={classes.root}>
+        <div id="experience" className={classes.root}>
             <Tabs
                 orientation="vertical"
                 variant="scrollable"

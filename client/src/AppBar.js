@@ -18,6 +18,16 @@ const styles = {
     }
 }
 
+const handleClick = () =>
+  document.getElementById("about").scrollIntoView({behavior: "smooth", inline: "nearest"});
+
+const handleClick2 = () =>
+  document.getElementById("experience").scrollIntoView({behavior: "smooth", inline: "nearest"});
+
+const handleClick3 = () =>
+  document.getElementById("contact").scrollIntoView({behavior: "smooth", inline: "nearest"});
+
+
 function HideOnScroll(props) {
   const { children } = props;
   const trigger = useScrollTrigger();
@@ -42,9 +52,9 @@ export default function HideAppBar(props) {
           <Toolbar style={styles.bar}>
             <Typography edge='start' variant="h6" style={styles.hello}>Hello World!</Typography>
             <ButtonGroup fullWidth>
-                <Button color="inherit" href="#about" style={styles.button}>About me</Button>
-                <Button color="inherit" style={styles.button}>Experience</Button>
-                <Button color="inherit" style={styles.button}>Connect</Button>
+                <Button color="inherit" onClick={handleClick} style={styles.button}>About me</Button>
+                <Button color="inherit" onClick={handleClick2} style={styles.button}>Experience</Button>
+                <Button color="inherit" onClick={handleClick3} style={styles.button}>Connect</Button>
             </ButtonGroup>
           </Toolbar>
         </AppBar>
