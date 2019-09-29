@@ -18,7 +18,7 @@ const handleClick = () =>
 export default function Contact(){
     return(
         <Container id="contact" style={styles.container} >
-            <IconButton href="https://www.linkedin.com/in/estellebarnoud/?locale=en_US" >
+            <IconButton href="https://www.linkedin.com/in/estellebarnoud/?locale=en_US" target="_blank" >
                 <LinkedInIcon fontSize="large" />
             </IconButton>
             <IconButton>
