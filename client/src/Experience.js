@@ -8,15 +8,15 @@ import NatureIcon from '@material-ui/icons/Eco';
 import SportIcon from '@material-ui/icons/FitnessCenter';
 import ToolIcon from '@material-ui/icons/Build';
 import HeartIcon from '@material-ui/icons/Favorite';
-import telecom from './telecom.png';
-import columbia from './columbia2.png';
-import cybelangel from './cybelangel2.png';
-import gates from './gates-foundation.webp';
-import bcv from './bluecloud2.png';
-import mad from './mad.png';
-import miedepain from './miedepain.png';
-import ideescitoyennes from './ideescitoyennes.png';
-import calm from './calm.png';
+import telecom from './images/telecom.png';
+import columbia from './images/columbia.png';
+import cybelangel from './images/cybelangel2.png';
+import gates from './images/gates-foundation.webp';
+import bcv from './images/bluecloud.png';
+import mad from './images/mad.png';
+import miedepain from './images/miedepain.png';
+import ideescitoyennes from './images/ideescitoyennes.png';
+import calm from './images/calm.png';
 
 const styles = {
     img_ed: {

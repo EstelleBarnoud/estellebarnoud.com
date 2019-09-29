@@ -1,6 +1,6 @@
 import React from 'react';
 import { Divider, Button, Container } from '@material-ui/core';
-import profile from './profile.png';
+import profile from './images/profile.png';
 
 const styles = {
     container: {
