@@ -1,6 +1,5 @@
 import React from 'react';
 import { Divider, Button, Container } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
 import profile from './profile.png';
 
 const styles = {
@@ -22,24 +21,22 @@ const styles = {
     description: {
         textAlign: 'left',
     },
-}
-
-const useStyles = makeStyles({
     root: {
-      background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-      border: 0,
-      borderRadius: 3,
-      boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-      color: 'white',
-      height: 48,
-      padding: '0 30px',
-      margin: '2%',
+        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+        border: 0,
+        borderRadius: 3,
+        boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+        color: 'white',
+        height: 48,
+        padding: '0 30px',
+        margin: '2%',
     },
-  });
+};
+
+const handleClick = () =>
+    document.getElementById("experience").scrollIntoView({behavior:"smooth", inline:"nearest"})
 
 export default function About() {
-    const classes = useStyles();
-
     return(
         <Container id="about" style={styles.container}>
             <div style={styles.box}>
@@ -52,13 +49,14 @@ export default function About() {
                         <h2>Data-driven</h2>
                         <h2>Science curious</h2>
                         <Divider />
-                        <h3><i>"The way to get started is to quit talking and begin doing."</i>&emsp; Walt Disney</h3>
+                        <h3><i>"The way to get started is to quit talking and begin doing."</i></h3>
+                        <h4>Walt Disney</h4>
                     </div>
                     <p>
                         Hi there! I am an Engineer based on New York. I am to finish my second Master of Science at Columbia in December 2020 and I currently work as a Business Analyst in a high-growth cybersecurity startup.
                     </p>
                 </div>
-                <Button className={classes.root}>
+                <Button style={styles.root} onClick={handleClick}>
                     Learn more
                 </Button>
             </div>
