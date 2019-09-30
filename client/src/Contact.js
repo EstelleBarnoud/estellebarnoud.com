@@ -16,9 +16,6 @@ const styles = {
 const handleClick = () =>
     window.open('mailto:estelle.barnoud@gmail.com')
 
-const downloadCV = () =>
-    console.log('Download Resume')
-
 export default function Contact(){
     return(
         <Container id="contact" style={styles.container} >
@@ -37,8 +34,8 @@ export default function Contact(){
                     <EmailIcon fontSize="large" />
                 </IconButton>
             </Tooltip>
-            <Tooltip title="Download Resume" >
-                <IconButton onClick={downloadCV}>
+            <Tooltip title="See Resume" >
+                <IconButton href='/resume.pdf' target="_blank" rel="noreferrer">
                     <ResumeIcon fontSize="large" />
                 </IconButton>
             </Tooltip>
