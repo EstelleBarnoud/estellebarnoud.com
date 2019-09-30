@@ -7,6 +7,7 @@ const styles = {
         display: "flex",
         justifyContent: "space-between",
         width: '100%',
+        backgroundColor: '#8BBBEB',
     },
     hello: {
         width: '100%',
