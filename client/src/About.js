@@ -13,6 +13,7 @@ const styles = {
         maxWidth:'50%',
         height:'auto',
         maxHeight:'50%',
+        marginTop: '-20%',
     },
     box: {
         maxWidth: '50%',
@@ -30,6 +31,10 @@ const styles = {
         height: 48,
         padding: '0 30px',
         margin: '2%',
+    },
+    text: {
+        fontSize: '16px',
+        margin: '8% 0%',
     },
 };
 
@@ -52,7 +57,7 @@ export default function About() {
                         <h3><i>"The way to get started is to quit talking and begin doing."</i></h3>
                         <h4>Walt Disney</h4>
                     </div>
-                    <p>
+                    <p style={styles.text}>
                         Hi there! I am an Engineer based on New York. I am to finish my second Master of Science at Columbia in December 2020 and I currently work as a Business Analyst in a high-growth cybersecurity startup.
                     </p>
                 </div>
