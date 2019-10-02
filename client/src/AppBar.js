@@ -19,14 +19,8 @@ const styles = {
     }
 }
 
-const handleClick = () =>
-  document.getElementById("about").scrollIntoView({behavior: "smooth", inline: "nearest"});
-
-const handleClick2 = () =>
-  document.getElementById("experience").scrollIntoView({behavior: "smooth", inline: "nearest"});
-
-const handleClick3 = () =>
-  document.getElementById("contact").scrollIntoView({behavior: "smooth", inline: "nearest"});
+const scrollToSection = (sectionId) => () =>
+    document.getElementById(sectionId).scrollIntoView({behavior: "smooth", inline: "nearest"});
 
 
 function HideOnScroll(props) {
@@ -53,9 +47,9 @@ export default function HideAppBar(props) {
           <Toolbar style={styles.bar}>
             <p edge='start' variant="h6" style={styles.hello}>Hello World!</p>
             <ButtonGroup fullWidth>
-                <Button color="inherit" variant="text" onClick={handleClick} style={styles.button}>About me</Button>
-                <Button color="inherit" variant="text" onClick={handleClick2} style={styles.button}>Experience</Button>
-                <Button color="inherit" variant="text" onClick={handleClick3} style={styles.button}>Connect</Button>
+                <Button color="inherit" variant="text" onClick={scrollToSection("about")} style={styles.button}>About me</Button>
+                <Button color="inherit" variant="text" onClick={scrollToSection("experience")} style={styles.button}>Experience</Button>
+                <Button color="inherit" variant="text" onClick={scrollToSection("contact")} style={styles.button}>Connect</Button>
             </ButtonGroup>
           </Toolbar>
         </AppBar>
