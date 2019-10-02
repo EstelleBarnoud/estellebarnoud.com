@@ -38,7 +38,7 @@ const styles = {
     },
 };
 
-const handleClick = () =>
+const scrollToExperience = () =>
     document.getElementById("experience").scrollIntoView({behavior:"smooth", inline:"nearest"})
 
 export default function About() {
@@ -61,7 +61,7 @@ export default function About() {
                         Hi there! I am an Engineer based in New York. I am about to finish my second Master of Science at Columbia in December 2019 and I currently work as a Business Analyst in a high-growth cybersecurity startup.
                     </p>
                 </div>
-                <Button style={styles.root} onClick={handleClick}>
+                <Button style={styles.root} onClick={scrollToExperience}>
                     Learn more
                 </Button>
             </div>

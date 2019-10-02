@@ -7,14 +7,13 @@ import GitHub from './Github.js';
 
 const styles = {
     container: {
-        //minHeight: '200px',
         display: 'flex',
         justifyContent: 'space-around',
         padding: '5%',
     }
 }
 
-const handleClick = () =>
+const sendEmail = () =>
     window.open('mailto:estelle.barnoud@gmail.com')
 
 export default function Contact(){
@@ -31,7 +30,7 @@ export default function Contact(){
                 </IconButton>
             </Tooltip>
             <Tooltip title="Send an email">
-                <IconButton onClick={handleClick}>
+                <IconButton onClick={sendEmail}>
                     <EmailIcon fontSize="large" />
                 </IconButton>
             </Tooltip>
