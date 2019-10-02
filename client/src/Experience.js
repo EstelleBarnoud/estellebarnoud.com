@@ -143,7 +143,7 @@ export default function Experience() {
                             <img src={telecom} style={styles.img_ed} alt="Telecom logo" />
                         </a>
                         <p>Diplôme d’ingénieur – equivalent to BS &amp; MS</p>
-                        <i>Master Specilization: Data Science | Entrepreneurship</i>
+                        <i>Master Specilization: Data Science</i>
                     </div>
                 </Container>            
             </TabPanel>
@@ -245,7 +245,7 @@ export default function Experience() {
                 </Container>
             </TabPanel>
             <TabPanel value={value} index={5} style={styles.panel}>
-                <p>Violin, Piano, Singing, Rowing</p>
+                <p>Violin, Piano, Singing, Rowing, Hiking</p>
             </TabPanel>
         </div>
     )
