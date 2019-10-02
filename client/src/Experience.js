@@ -109,7 +109,7 @@ export default function Experience() {
     const classes = useStyles();
     const [value, setValue] = React.useState(0);
   
-    const handleChange = (newValue) => {
+    const handleChange = (_, newValue) => {
       setValue(newValue);
     };  
 

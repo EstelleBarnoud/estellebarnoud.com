@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, IconButton, Tooltip, SvgIcon } from '@material-ui/core';
+import { Container, IconButton, Tooltip } from '@material-ui/core';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import ResumeIcon from '@material-ui/icons/Description';
