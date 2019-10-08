@@ -8,6 +8,7 @@ import NatureIcon from '@material-ui/icons/Eco';
 import SportIcon from '@material-ui/icons/FitnessCenter';
 import ToolIcon from '@material-ui/icons/Build';
 import HeartIcon from '@material-ui/icons/Favorite';
+import './App.css';
 import telecom from './images/telecom.png';
 import columbia from './images/columbia.png';
 import cybelangel from './images/cybelangel2.png';
@@ -36,6 +37,7 @@ const styles = {
         justifyContent: 'space-around',
         maxHeight: '800px',
         margin: '0 auto',
+        fontFamily: 'ABeeZee',
     },
     panel: {
         width: '100%',
@@ -59,8 +61,18 @@ const styles = {
     chip: {
         margin: 2,
     },
-    subtitle: {
+    categories: {
         fontSize: '14px',
+    },
+    list: {
+        fontSize: '14px',
+        display: 'flex',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+    },
+    subtitle: {
+        fontSize: '16px',
     }
 }
 
@@ -154,18 +166,30 @@ export default function Experience() {
                             <img src={cybelangel} style={styles.img} alt="CybelAngel logo" />
                         </a>
                         <p>Business Analyst</p>
+                        <ul style={styles.list}>
+                            <li>Analyzing &amp; forecasting sales performances; implementing tools to automate analyses</li>
+                            <li>Working cross teams on systematic tracking of KPIs and improving processes</li>
+                            <li>Assisting the CEO as Data consultant; reporting directly to the CEO</li>
+                        </ul>
                     </div>
                     <div style={styles.content}>
                         <a style={styles.img} href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer" >
                             <img src={gates} style={styles.img} alt="Gates Foundation logo" />
                         </a>
                         <p>Part-time Consultant</p>
+                        <ul style={styles.list}>
+                            <li>Created statistical machine learning robots to build linguistic glossaries <i>[Python]</i></li>
+                            <li>Implemented recurrent neural network to translate sentence-to-sentence <i>[TensorFlow][Python]</i></li>
+                        </ul>
                     </div>
                     <div style={styles.content}>
                         <a style={styles.img} href="www.bluecloudventures.com/" target="_blank" rel="noopener noreferrer" >
                             <img src={bcv} style={styles.img} alt="Blue Cloud Ventures logo" />
                         </a>
                         <p>Part-time Consultant</p>
+                        <ul style={styles.list}>
+                            <li>Automated search of new startups to invest in through ranking dashboard tool <i>[scraping][Power BI]</i></li>
+                        </ul>
                     </div>
                 </Container>  
             </TabPanel>
@@ -176,57 +200,64 @@ export default function Experience() {
                             <img src={mad} style={styles.img} alt="Make A Difference logo" />
                         </a>
                         <p style={styles.description}>President and founder</p>
+                        <ul style={styles.list}>
+                            <li>Founded &amp; chaired the association; Directed &amp; led projects such as charity work and recycling</li>
+                            <li>Organized €1500+ event of 100+ attendants to raise awareness about disabilities</li>
+                        </ul>
                     </div>
                     <div style={styles.content}>
                         <a style={styles.img} href="https://www.miedepain.asso.fr/" target="_blank" rel="noopener noreferrer" >
                             <img src={miedepain} style={styles.img} alt="La Mie de Pain logo" />
                         </a>
                         <p style={styles.description}>Volunteer</p>
+                        <ul style={styles.list}>
+                            <li>Helped serving up to 600 meals to those in need</li>
+                        </ul>
                     </div>
                 </Container>
             </TabPanel>
             <TabPanel value={value} index={3} style={styles.panel}>
                 <Container style={styles.container}>
-                    <p style={styles.subtitle}>Programming &amp; Machine Learning</p>
+                    <p style={styles.categories}>Coding, Machine Learning &amp; Stats</p>
                     <div style={styles.root}>
                         <Chip variant='outlined' label='Python' style={styles.chip} />
                         <Chip variant='outlined' label='sklearn' style={styles.chip} />
                         <Chip variant='outlined' label='pandas' style={styles.chip} />
                         <Chip variant='outlined' label='R' style={styles.chip} />
                         <Chip variant='outlined' label='Java' style={styles.chip} />
-                        <Chip variant='outlined' label='SQL' style={styles.chip} />
                     </div>
-                    <p style={styles.subtitle}>OS &amp; version control</p>
+                    <p style={styles.categories}>OS &amp; Version Control</p>
                     <div style={styles.root}>
                         <Chip variant='outlined' label='Linux' style={styles.chip} />
                         <Chip variant='outlined' label='Windows' style={styles.chip} />
                         <Chip variant='outlined' label='Git' style={styles.chip} />
                     </div>
-                    <p style={styles.subtitle}>Web Development</p>
+                    <p style={styles.categories}>Web Development</p>
                     <div style={styles.root}>
                         <Chip variant='outlined' label='HTML' style={styles.chip} />
                         <Chip variant='outlined' label='CSS' style={styles.chip} />
                         <Chip variant='outlined' label='Javascript' style={styles.chip} />
-                        <Chip variant='outlined' label='JSX' style={styles.chip} />
                         <Chip variant='outlined' label='React' style={styles.chip} />
                         <Chip variant='outlined' label='Redux' style={styles.chip} />
                     </div>
-                    <p style={styles.subtitle}>Software</p>
+                    <p style={styles.categories}>Data Management, Visualization &amp; Analysis</p>
                     <div style={styles.root}>
-                        <Chip variant='outlined' label='Power BI' style={styles.chip} />
+                        <Chip variant='outlined' label='SQL' style={styles.chip} />
                         <Chip variant='outlined' label='Excel' style={styles.chip} />
+                        <Chip variant='outlined' label='Power BI' style={styles.chip} />
+                        <Chip variant='outlined' label='Tableau' style={styles.chip} />
                         <Chip variant='outlined' label='Salesforce' style={styles.chip} />  
                     </div>
                 </Container>
             </TabPanel>
             <TabPanel value={value} index={4} style={styles.panel}>
-                <Container>
+                <Container style={styles.container}>
                     <div>
                         <a href="https://github.com/EstelleBarnoud/sim_project" target="_blank" rel="noopener noreferrer" >
                             <img src={ideescitoyennes} style={styles.img} alt="Idees citoyennes Logo" />
                         </a>
                         <h4>Founder, Product Developer &amp; Manager of Web Platform engaging citizens to participate</h4>
-                        <ul>
+                        <ul style={styles.list}>
                             <li>Benchmarked existing digital infrastructures and led survey on how citizens perceive their engagement</li>
                             <li>Developed MVP web platform using opensource &amp; most used technologies <i>[JSX][React][Redux][Node.js][Django]</i></li>
                         </ul>
@@ -236,7 +267,7 @@ export default function Experience() {
                             <img src={calm} style={styles.img} alt="CALM Logo" />
                         </a>
                         <h4>Data Analyst for non-profit organization enabling citizens to host refugees | Télécom</h4>
-                        <ul>
+                        <ul style={styles.list}>
                             <li>Collaborated with non-profit organization CALM in 8-student team</li>
                             <li>Coded scripts to cleanse csv datasets <i>[Python]</i></li>
                             <li>Produced relevant visualization interpretable for the association <i>[HTML/CSS/JavaScript]</i></li>
@@ -245,7 +276,19 @@ export default function Experience() {
                 </Container>
             </TabPanel>
             <TabPanel value={value} index={5} style={styles.panel}>
-                <p>Violin, Piano, Singing, Rowing, Hiking</p>
+                <Container style={styles.container}>
+                    <p style={styles.subtitle}>Music</p>
+                    <div style={styles.root}>
+                        <Chip variant='outlined' label='Violin' style={styles.chip} />
+                        <Chip variant='outlined' label='Piano' style={styles.chip} />
+                        <Chip variant='outlined' label='Singing' style={styles.chip} />
+                    </div>
+                    <p style={styles.subtitle}>Sport</p>
+                    <div style={styles.root}>
+                        <Chip variant='outlined' label='Hiking' style={styles.chip} />
+                        <Chip variant='outlined' label='Rowing' style={styles.chip} />
+                    </div>
+                </Container>
             </TabPanel>
         </div>
     )
