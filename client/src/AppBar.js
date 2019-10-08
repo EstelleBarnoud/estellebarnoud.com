@@ -1,23 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import Slide from '@material-ui/core/Slide';
-import Button from '@material-ui/core/Button';
+import { AppBar, Toolbar, CssBaseline, useScrollTrigger, Slide, Button, ButtonGroup } from '@material-ui/core';
 
 const styles = {
     bar: {
         display: "flex",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        width: '100%',
+        backgroundColor: '#8BBBEB',
     },
-    buttons: {
-        //display: "flex",
-        //justifyContent: "space-around"
+    hello: {
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'flex-start',
     },
+    button: {
+        padding: '2%',
+    }
 }
+
+const scrollToSection = (sectionId) => () =>
+    document.getElementById(sectionId).scrollIntoView({behavior: "smooth", inline: "nearest"});
+
 
 function HideOnScroll(props) {
   const { children } = props;
@@ -41,11 +45,12 @@ export default function HideAppBar(props) {
       <HideOnScroll {...props}>
         <AppBar>
           <Toolbar style={styles.bar}>
-            <Typography variant="h6">Hello World!</Typography>
-            <div style={styles.buttons}>
-                <Button color="inherit">About me</Button>
-                <Button color="inherit">Projects</Button>
-            </div>
+            <p edge='start' variant="h6" style={styles.hello}>Hello World!</p>
+            <ButtonGroup fullWidth>
+                <Button color="inherit" variant="text" onClick={scrollToSection("about")} style={styles.button}>About me</Button>
+                <Button color="inherit" variant="text" onClick={scrollToSection("experience")} style={styles.button}>Experience</Button>
+                <Button color="inherit" variant="text" onClick={scrollToSection("contact")} style={styles.button}>Connect</Button>
+            </ButtonGroup>
           </Toolbar>
         </AppBar>
       </HideOnScroll>

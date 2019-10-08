@@ -1,8 +1,11 @@
 import React from 'react';
-import AppBar from './AppBar';
-import Cover from './Cover.js';
-import './App.css';
 import { createMuiTheme } from '@material-ui/core/styles';
+import AppBar from './AppBar.js';
+import Cover from './Cover.js';
+import Contact from './Contact.js';
+import About from './About.js';
+import Experience from './Experience.js';
+import './App.css';
 
 const theme = createMuiTheme({
   palette: {
@@ -25,16 +28,9 @@ function App() {
         <AppBar />
         <Cover />
       </header>
-      <body>
-        <a
-          className="App-link"
-          href="https://www.linkedin.com/in/estellebarnoud/?locale=en_US"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn profile
-        </a>
-      </body>
+      <About />
+      <Experience />
+      <Contact />
     </div>
   );
 }
