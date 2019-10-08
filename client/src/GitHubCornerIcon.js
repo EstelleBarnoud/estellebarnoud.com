@@ -5,7 +5,7 @@ const styles = {
         fill: '#151513',
         color: '#fff',
         position: 'absolute',
-        top: '74px',
+        top: '70px',
         border: 0,
         right: 0,
         zIndex: 1000,
