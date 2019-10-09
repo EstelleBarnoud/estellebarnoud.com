@@ -34,7 +34,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "http://estellebarnoud.github.io/",
+  "homepage": ".",
   "devDependencies": {
     "gh-pages": "^2.1.1"
   }
