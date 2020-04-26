@@ -92,7 +92,7 @@ export default function SimpleTable() {
                 {row.company}
               </TableCell>
               <TableCell align="center">{row.title}</TableCell>
-              <TableCell align="center">{row.description}</TableCell>
+              <TableCell>{row.description}</TableCell>
             </TableRow>
           ))}
         </TableBody>

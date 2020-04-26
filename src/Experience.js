@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Typography, Box, Tabs, Tab, Container, Chip } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import WorkExp from './WorkExp.js';
+import Volunteering from "./Volunteering.js";
 import SchoolIcon from '@material-ui/icons/School';
 import WorkIcon from '@material-ui/icons/BusinessCenter';
 import NatureIcon from '@material-ui/icons/Eco';
@@ -12,8 +13,6 @@ import HeartIcon from '@material-ui/icons/Favorite';
 import './App.css';
 import telecom from './images/telecom.png';
 import columbia from './images/columbia.png';
-import mad from './images/mad.png';
-import miedepain from './images/miedepain.png';
 import ideescitoyennes from './images/ideescitoyennes.png';
 import calm from './images/calm.png';
 
@@ -162,25 +161,7 @@ export default function Experience() {
             </TabPanel>
             <TabPanel value={value} index={2} style={styles.panel}>
                 <Container style={styles.container}>
-                    <div style={styles.content}>
-                        <a style={styles.img} href="https://www.facebook.com/MakeADifferenceTPT/" target="_blank" rel="noopener noreferrer" >
-                            <img src={mad} style={styles.img} alt="Make A Difference logo" />
-                        </a>
-                        <p style={styles.description}>President and founder</p>
-                        <ul style={styles.list}>
-                            <li>Founded &amp; chaired the association; Directed &amp; led projects such as charity work and recycling</li>
-                            <li>Organized €1500+ event of 100+ attendants to raise awareness about disabilities</li>
-                        </ul>
-                    </div>
-                    <div style={styles.content}>
-                        <a style={styles.img} href="https://www.miedepain.asso.fr/" target="_blank" rel="noopener noreferrer" >
-                            <img src={miedepain} style={styles.img} alt="La Mie de Pain logo" />
-                        </a>
-                        <p style={styles.description}>Volunteer</p>
-                        <ul style={styles.list}>
-                            <li>Helped serving up to 600 meals to those in need</li>
-                        </ul>
-                    </div>
+                    <Volunteering />
                 </Container>
             </TabPanel>
             <TabPanel value={value} index={3} style={styles.panel}>
