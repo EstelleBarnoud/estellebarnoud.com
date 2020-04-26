@@ -4,6 +4,7 @@ import { Typography, Box, Tabs, Tab, Container, Chip } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import WorkExp from './WorkExp.js';
 import Volunteering from "./Volunteering.js";
+import Projects from "./Projects.js";
 import SchoolIcon from '@material-ui/icons/School';
 import WorkIcon from '@material-ui/icons/BusinessCenter';
 import NatureIcon from '@material-ui/icons/Eco';
@@ -13,8 +14,6 @@ import HeartIcon from '@material-ui/icons/Favorite';
 import './App.css';
 import telecom from './images/telecom.png';
 import columbia from './images/columbia.png';
-import ideescitoyennes from './images/ideescitoyennes.png';
-import calm from './images/calm.png';
 
 const styles = {
     img_ed: {
@@ -200,27 +199,7 @@ export default function Experience() {
             </TabPanel>
             <TabPanel value={value} index={4} style={styles.panel}>
                 <Container style={styles.container}>
-                    <div>
-                        <a href="https://github.com/EstelleBarnoud/sim_project" target="_blank" rel="noopener noreferrer" >
-                            <img src={ideescitoyennes} style={styles.img} alt="Idees citoyennes Logo" />
-                        </a>
-                        <h4>Founder, Product Developer &amp; Manager of Web Platform engaging citizens to participate</h4>
-                        <ul style={styles.list}>
-                            <li>Benchmarked existing digital infrastructures and led survey on how citizens perceive their engagement</li>
-                            <li>Developed MVP web platform using opensource &amp; most used technologies <i>[JSX][React][Redux][Node.js][Django]</i></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href="https://perso.telecom-paristech.fr/ebarnoud/paf/dataviz.html" target="_blank" rel="noopener noreferrer" >
-                            <img src={calm} style={styles.img} alt="CALM Logo" />
-                        </a>
-                        <h4>Data Analyst for non-profit organization enabling citizens to host refugees | Télécom</h4>
-                        <ul style={styles.list}>
-                            <li>Collaborated with non-profit organization CALM in 8-student team</li>
-                            <li>Coded scripts to cleanse csv datasets <i>[Python]</i></li>
-                            <li>Produced relevant visualization interpretable for the association <i>[HTML/CSS/JavaScript]</i></li>
-                        </ul>
-                    </div>
+                    <Projects />
                 </Container>
             </TabPanel>
             <TabPanel value={value} index={5} style={styles.panel}>
