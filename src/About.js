@@ -8,14 +8,14 @@ const styles = {
     container: {
         display:'flex',
         justifyContent: 'space-around',
-        padding: '5%',
+        padding: '3%',
         alignItems: 'center',
     },
     img: {
         maxWidth:'50%',
         height:'auto',
         maxHeight:'50%',
-        marginTop: '-20%',
+        marginTop: '-10%',
     },
     box: {
         maxWidth: '50%',
@@ -67,7 +67,7 @@ export default function About() {
                         <h4>Walt Disney</h4>
                     </div>
                     <p style={styles.text}>
-                        Hi there! I am an Engineer based in New York. I am about to finish my second Master of Science at Columbia in December 2019 and I currently work as a Business Analyst in a high-growth cybersecurity startup.
+                    Hi there! I am an Engineer based in New York and currently work as a Data Scientist &amp; Analyst at L'Oréal.
                     </p>
                 </div>
                 <Button style={styles.root} onClick={scrollToExperience}>
