@@ -1,6 +1,8 @@
 import React from 'react';
 import { Divider, Button, Container } from '@material-ui/core';
 import profile from './images/profile.png';
+import GitHubCornerIcon from './GitHubCornerIcon.js';
+import './animation.css';
 
 const styles = {
     container: {
@@ -44,6 +46,13 @@ const scrollToExperience = () =>
 export default function About() {
     return(
         <Container id="about" style={styles.container}>
+            <a href="https://github.com/EstelleBarnoud/site-perso/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View source on Github"
+                className="no-print github-corner" >
+                <GitHubCornerIcon />
+            </a>
             <div style={styles.box}>
                 <img src={profile} className="App-profile" style={styles.img} alt="profile" />
             </div>
