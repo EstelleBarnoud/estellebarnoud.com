@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Typography, Box, Tabs, Tab, Container, Chip } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import WorkExp from './WorkExp.js';
 import SchoolIcon from '@material-ui/icons/School';
 import WorkIcon from '@material-ui/icons/BusinessCenter';
 import NatureIcon from '@material-ui/icons/Eco';
@@ -11,9 +12,6 @@ import HeartIcon from '@material-ui/icons/Favorite';
 import './App.css';
 import telecom from './images/telecom.png';
 import columbia from './images/columbia.png';
-import cybelangel from './images/cybelangel2.png';
-import gates from './images/gates-foundation.webp';
-import bcv from './images/bluecloud.png';
 import mad from './images/mad.png';
 import miedepain from './images/miedepain.png';
 import ideescitoyennes from './images/ideescitoyennes.png';
@@ -37,7 +35,6 @@ const styles = {
         justifyContent: 'space-around',
         maxHeight: '800px',
         margin: '0 auto',
-        fontFamily: 'ABeeZee',
     },
     panel: {
         width: '100%',
@@ -154,44 +151,14 @@ export default function Experience() {
                         <a style={styles.img} href="https://www.telecom-paris.fr/" target="_blank" rel="noopener noreferrer" >
                             <img src={telecom} style={styles.img_ed} alt="Telecom logo" />
                         </a>
-                        <p>Diplôme d’ingénieur – equivalent to BS &amp; MS</p>
-                        <i>Master Specilization: Data Science</i>
+                        <p>Diplôme d’ingénieur – Master of Science in Data Science</p>
                     </div>
                 </Container>            
             </TabPanel>
             <TabPanel value={value} index={1} style={styles.panel}>
                 <Container style={styles.container}>
-                    <div style={styles.content}>
-                        <a style={styles.img} href="https://cybelangel.com/" target="_blank" rel="noopener noreferrer" >
-                            <img src={cybelangel} style={styles.img} alt="CybelAngel logo" />
-                        </a>
-                        <p>Business Analyst</p>
-                        <ul style={styles.list}>
-                            <li>Analyzing &amp; forecasting sales performances; implementing tools to automate analyses</li>
-                            <li>Working cross teams on systematic tracking of KPIs and improving processes</li>
-                            <li>Assisting the CEO as Data consultant; reporting directly to the CEO</li>
-                        </ul>
-                    </div>
-                    <div style={styles.content}>
-                        <a style={styles.img} href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer" >
-                            <img src={gates} style={styles.img} alt="Gates Foundation logo" />
-                        </a>
-                        <p>Part-time Consultant</p>
-                        <ul style={styles.list}>
-                            <li>Created statistical machine learning robots to build linguistic glossaries <i>[Python]</i></li>
-                            <li>Implemented recurrent neural network to translate sentence-to-sentence <i>[TensorFlow][Python]</i></li>
-                        </ul>
-                    </div>
-                    <div style={styles.content}>
-                        <a style={styles.img} href="www.bluecloudventures.com/" target="_blank" rel="noopener noreferrer" >
-                            <img src={bcv} style={styles.img} alt="Blue Cloud Ventures logo" />
-                        </a>
-                        <p>Part-time Consultant</p>
-                        <ul style={styles.list}>
-                            <li>Automated search of new startups to invest in through ranking dashboard tool <i>[scraping][Power BI]</i></li>
-                        </ul>
-                    </div>
-                </Container>  
+                    <WorkExp />
+                </Container>
             </TabPanel>
             <TabPanel value={value} index={2} style={styles.panel}>
                 <Container style={styles.container}>
