@@ -5,6 +5,11 @@ import Contact from './Contact.js';
 import About from './About.js';
 import Experience from './Experience.js';
 import './App.css';
+import ReactGA from 'react-ga';
+
+const trackingId = 'UA-108079703-2'; // Replace with your Google Analytics tracking ID
+ReactGA.initialize(trackingId);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const theme = createMuiTheme({
   palette: {
