@@ -6,19 +6,20 @@ import './animation.css';
 
 const styles = {
     container: {
-        display:'flex',
+        display: 'block',
         justifyContent: 'space-around',
         padding: '3%',
         alignItems: 'center',
     },
     img: {
-        maxWidth:'50%',
+        maxWidth:'75%',
         height:'auto',
-        maxHeight:'50%',
-        marginTop: '-10%',
+        maxHeight: 350,
+        margin: '5%',
     },
     box: {
-        maxWidth: '50%',
+        display: 'inline-block',
+        minWidth: '50%',
         height: 'auto',
     },
     description: {
