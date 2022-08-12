@@ -15,9 +15,6 @@ const styles = {
         maxHeight: '80px',
         maxWidth: '150px',
         // margin: '1% 5%',
-    },
-    table: {
-        minWidth: 650,
     }
 }
 
@@ -84,7 +81,7 @@ const rows = [
 export default function SimpleTable() {
   return (
     <TableContainer>
-      <Table style={styles.table} aria-label="simple table">
+      <Table aria-label="simple table">
         <TableBody>
           {rows.map((row) => (
             <TableRow key={row.company}>
