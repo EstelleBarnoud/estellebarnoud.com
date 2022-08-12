@@ -56,18 +56,20 @@ export default function About() {
             <div style={styles.box}>
                 <img src={profile} className="App-profile" style={styles.img} alt="profile" />
             </div>
-            <div>
+            <div style={styles.box}>
                 <div style={styles.description}>
                     <div>
-                        <h2>Techy</h2>
-                        <h2>Data-driven</h2>
-                        <h2>Science curious</h2>
+                        <h2>Laser-focused on bringing impactful analytics solutions</h2>
+                        <h2>Eternal learner keen on helping people grow</h2>
+                        <h2>Cheerful &amp; committed</h2>
                         <Divider />
                         <h3><i>"The way to get started is to quit talking and begin doing."</i></h3>
                         <h4>Walt Disney</h4>
                     </div>
                     <p style={styles.text}>
-                    Hi there! I am an Engineer based in New York and currently work as a Data Scientist &amp; Analyst at L'Oréal.
+                        Hi there! I’m an Engineer based in New York City.<br/>
+                        ✨ I’m interested in Analytics &amp; Data Engineering<br/>
+                        🌱 I’m currently deep diving into DataOps
                     </p>
                 </div>
                 <Button style={styles.root} onClick={scrollToExperience}>
