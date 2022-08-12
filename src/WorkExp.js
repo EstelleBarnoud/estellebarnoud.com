@@ -29,7 +29,7 @@ const rows = [
         <img src={gojob} style={styles.img} alt="Gojob" />
     </a>,
     <div>
-        <p>Senior Analytics Engineer &amp; Data Engineer</p>
+        <p><b>Senior Analytics Engineer &amp; Data Engineer</b></p>
         <i> Full time</i>
     </div>,
     <ul>
@@ -44,7 +44,7 @@ const rows = [
         <img src={loreal} style={styles.img} alt="L'Oreal" />
     </a>,
     <div>
-        <p>Data Scientist &amp; Analyst</p>
+        <p><b>Data Scientist &amp; Analyst</b></p>
         <i> Full time</i>
     </div>,
     <ul>
@@ -58,7 +58,7 @@ const rows = [
         <img src={cybelangel} style={styles.img} alt="CybelAngel" />
     </a>,
     <div>
-        <p>Business Analyst</p>
+        <p><b>Business Analyst</b></p>
         <i>Full time</i>
     </div>,
     <ul>
@@ -72,7 +72,7 @@ const rows = [
         <img src={gates} style={styles.img} alt="Gates Foundation" />
     </a>,
     <div>
-        <p>Data Science Consultant</p>
+        <p><b>Data Science Consultant</b></p>
         <i> Part time</i>
     </div>,
     <ul>
@@ -84,7 +84,7 @@ const rows = [
         <img src={bcv} style={styles.img} alt="Blue Cloud Ventures" />
     </a>,
     <div>
-        <p>Data Science Consultant</p>
+        <p><b>Data Science Consultant</b></p>
         <i> Part time</i>
     </div>,
     <ul style={styles.list}>
