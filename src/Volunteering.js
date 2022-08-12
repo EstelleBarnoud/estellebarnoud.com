@@ -26,7 +26,7 @@ const rows = [
       <img src={mad} style={styles.img} alt="Make A Difference logo" />
     </a>,
     <div>
-        <p>President and founder</p>
+        <p><b>President and founder</b></p>
         <i>Apr'17 - May'18</i>
     </div>,
     <ul>
@@ -39,7 +39,7 @@ const rows = [
       <img src={miedepain} style={styles.img} alt="La Mie de Pain logo" />
     </a>,
     <div>
-        <p>Volunteer</p>
+        <p><b>Volunteer</b></p>
         <i>Spring 2018</i>
     </div>,
     <ul>
