@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Typography, Box, Tabs, Tab, Container, Chip } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import WorkExp from './WorkExp.js';
+import Education from './Education.js';
 import Volunteering from "./Volunteering.js";
 import Projects from "./Projects.js";
 import SchoolIcon from '@material-ui/icons/School';
@@ -12,19 +13,8 @@ import SportIcon from '@material-ui/icons/FitnessCenter';
 import ToolIcon from '@material-ui/icons/Build';
 import HeartIcon from '@material-ui/icons/Favorite';
 import './App.css';
-import telecom from './images/telecom.png';
-import columbia from './images/columbia.png';
 
 const styles = {
-    img_ed: {
-        maxHeight: '80px',
-    },
-    img: {
-        //flexBasis: '20%',
-        maxHeight: '80px',
-        maxWidth: '200px',
-        margin: '1% 5%',
-    },
     container: {
         width: '100%',
         height: '100%',
@@ -43,9 +33,6 @@ const styles = {
     content: {
         display: 'flex',
         flexDirection: 'row',
-    },
-    space: {
-        marginTop: '5%',
     },
     root: {
         display: 'flex',
@@ -139,18 +126,7 @@ export default function Experience() {
             </Tabs>
             <TabPanel value={value} index={0} style={styles.panel}>
                 <Container style={styles.container}>
-                    <div>
-                        <a style={styles.img} href="https://mse.ieor.columbia.edu/" target="_blank" rel="noopener noreferrer" >
-                            <img src={columbia} style={styles.img_ed} alt="Columbia logo" />
-                        </a>
-                        <p>Master of Science in Management Science &amp; Engineering</p>
-                    </div>
-                    <div style={styles.space}>
-                        <a style={styles.img} href="https://www.telecom-paris.fr/" target="_blank" rel="noopener noreferrer" >
-                            <img src={telecom} style={styles.img_ed} alt="Telecom logo" />
-                        </a>
-                        <p>Diplôme d’ingénieur – Master of Science in Data Science</p>
-                    </div>
+                    <Education />
                 </Container>            
             </TabPanel>
             <TabPanel value={value} index={1} style={styles.panel}>
