@@ -29,7 +29,7 @@ const styles = {
 }
 
 const sendEmail = () =>
-    window.open('mailto:estelle.barnoud@gmail.com')
+    window.open('mailto:estelle.barnoud@columbia.edu')
 
 export default function Contact(){
     return(
