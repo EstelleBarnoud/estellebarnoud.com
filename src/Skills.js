@@ -12,11 +12,11 @@ const styles = {
         margin: 2,
     },
     category: {
-        margin: '3%',
+        margin: 23,
     },
     name: {
         fontWeight: 'bold',
-        margin: '1%'
+        margin: 10
     },
 }
 
