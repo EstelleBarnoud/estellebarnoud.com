@@ -56,6 +56,9 @@ const styles = {
     },
     subtitle: {
         fontSize: '16px',
+    },
+    tabs: {
+        minWidth: '130px',
     }
 }
 
@@ -117,6 +120,7 @@ export default function Experience() {
                 onChange={handleChange}
                 aria-label="Vertical tabs example"
                 className={classes.tabs}
+                style={styles.tabs}
             >
                 <Tab icon={<SchoolIcon />} label="Education" {...a11yProps(0)} />
                 <Tab icon={<WorkIcon />} label="Career" {...a11yProps(1)} />
