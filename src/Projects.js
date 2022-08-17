@@ -26,7 +26,7 @@ const rows = [
         <img src={ideescitoyennes} style={styles.img} alt="Idees citoyennes Logo" />
     </a>,
     <div>
-        <h4>Founder, Product Developer &amp; Manager of Web Platform engaging citizens to participate</h4>
+        <h4>Founder, Product Developer &amp; Manager of Web Platform engaging citizens to participate | Télécom</h4>
         <ul>
             <li>Benchmarked existing digital infrastructures and led survey on how citizens perceive their engagement</li>
             <li>Developed MVP web platform using opensource &amp; most used technologies <i>[JSX][React][Redux][Node.js][Django]</i></li>
