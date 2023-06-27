@@ -122,36 +122,36 @@ export default function Experience() {
                 className={classes.tabs}
                 style={styles.tabs}
             >
-                <Tab icon={<SchoolIcon />} label="Education" {...a11yProps(0)} />
-                <Tab icon={<WorkIcon />} label="Career" {...a11yProps(1)} />
-                <Tab icon={<NatureIcon />} label="Volunteering" {...a11yProps(2)} />
-                <Tab icon={<SportIcon />} label="Skills" {...a11yProps(3)} />
-                <Tab icon={<ToolIcon />} label="Projects" {...a11yProps(4)} />
+                <Tab icon={<WorkIcon />} label="Career" {...a11yProps(0)} />
+                <Tab icon={<SchoolIcon />} label="Education" {...a11yProps(1)} />
+                <Tab icon={<SportIcon />} label="Skills" {...a11yProps(2)} />
+                <Tab icon={<ToolIcon />} label="Projects" {...a11yProps(3)} />
+                <Tab icon={<NatureIcon />} label="Volunteering" {...a11yProps(4)} />
                 <Tab icon={<HeartIcon />} label="Passions" {...a11yProps(5)} />
             </Tabs>
             <TabPanel value={value} index={0} style={styles.panel}>
                 <Container style={styles.container}>
-                    <Education />
-                </Container>            
-            </TabPanel>
-            <TabPanel value={value} index={1} style={styles.panel}>
-                <Container style={styles.container}>
                     <WorkExp />
                 </Container>
             </TabPanel>
-            <TabPanel value={value} index={2} style={styles.panel}>
+            <TabPanel value={value} index={1} style={styles.panel}>
                 <Container style={styles.container}>
-                    <Volunteering />
-                </Container>
+                    <Education />
+                </Container>            
             </TabPanel>
-            <TabPanel value={value} index={3} style={styles.panel}>
+            <TabPanel value={value} index={2} style={styles.panel}>
                 <Container style={styles.container}>
                     <Skills />
                 </Container>
             </TabPanel>
-            <TabPanel value={value} index={4} style={styles.panel}>
+            <TabPanel value={value} index={3} style={styles.panel}>
                 <Container style={styles.container}>
                     <Projects />
+                </Container>
+            </TabPanel>
+            <TabPanel value={value} index={4} style={styles.panel}>
+                <Container style={styles.container}>
+                    <Volunteering />
                 </Container>
             </TabPanel>
             <TabPanel value={value} index={5} style={styles.panel}>
