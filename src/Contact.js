@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, IconButton, Tooltip } from '@material-ui/core';
+import { Container, Divider, IconButton, Tooltip } from '@material-ui/core';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import ResumeIcon from '@material-ui/icons/Description';
@@ -26,7 +26,7 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: '2%',
+        margin: '3%',
     },
 }
 
@@ -58,6 +58,7 @@ export default function Contact(){
                     </IconButton>
                 </Tooltip>
             </Container>
+            <Divider />
             <Container style={styles.tech}>
                 <p>Developed using</p>
                 <img src={NodeJsIcon} style={styles.node} alt="NodeJs icon"/>
