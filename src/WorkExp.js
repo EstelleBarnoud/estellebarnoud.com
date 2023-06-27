@@ -1,9 +1,5 @@
 import React from 'react';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableRow from '@material-ui/core/TableRow';
+import { Table, TableContainer, TableBody, TableCell, TableRow } from '@material-ui/core';
 import dbt from './images/dbt.png';
 import gojob from './images/gojob.png';
 import loreal from './images/loreal.jpg';
