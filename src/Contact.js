@@ -20,6 +20,7 @@ const styles = {
     },
     node: {
         maxHeight: '40px',
+        maxWidth: '130px',
         margin: '0% 5%',
     },
     tech: {
