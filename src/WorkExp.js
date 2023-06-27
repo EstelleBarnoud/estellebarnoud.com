@@ -4,6 +4,7 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableRow from '@material-ui/core/TableRow';
+import dbt from './images/dbt.png';
 import gojob from './images/gojob.png';
 import loreal from './images/loreal.jpg';
 import cybelangel from './images/cybelangel2.png';
@@ -24,6 +25,21 @@ function createData(company, title, description) {
 }
 
 const rows = [
+  createData(
+    <a style={styles.img} href="https://www.getdbt.com/" target="_blank" rel="noopener noreferrer" >
+        <img src={dbt} style={styles.img} alt="dbt Labs logo" />
+    </a>,
+    <div>
+        <p><b>Senior Analytics Engineer</b></p>
+        <i> Full time</i>
+    </div>,
+    <ul>
+        <li>Led end-to-end data modeling projects from extraction, load & transformation to self-service. Maintained 1000+ models across 30+ sources for self-service <i>[dbt][Snowflake][Looker][Fivetran]</i></li>
+        <li>Reduced CI time from 1h+ to &lt;2min through the implementation of a deploy job & model config optimization</li>
+        <li>Reduced number of incidents & review time through custom CI & hooks ensuring code quality on all contributions <i>[dbt][GitHub Actions]</i></li>
+        <li>Simplified project management processes and fostered collaboration & knowledge sharing across teams by automating roadmap setup and creating a company-wide knowledge base <i>[Notion]</i></li>
+    </ul>
+    ),
   createData(
     <a style={styles.img} href="https://www.gojob.com/" target="_blank" rel="noopener noreferrer" >
         <img src={gojob} style={styles.img} alt="Gojob" />
