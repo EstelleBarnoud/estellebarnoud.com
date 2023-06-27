@@ -12,17 +12,6 @@ ReactGA.initialize(trackingId);
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 const theme = createMuiTheme({
-  palette: {
-    // primary: {
-    //   //light: '#757ce8',
-    //   main: '#8BBBEB',
-    //   //dark: '#002884',
-    //   //contrastText: '#fff',
-    // },
-    // secondary: {
-    //   main: '#C51162',
-    // },
-  },
   typography: {
     fontFamily: "ABeeZee",
     align: "center",
