@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { AppBar, Toolbar, CssBaseline, useScrollTrigger, Slide, Button, ButtonGroup } from '@material-ui/core';
+import { AppBar, Toolbar, useScrollTrigger, Slide, Button, ButtonGroup } from '@material-ui/core';
 
 const styles = {
     bar: {
@@ -41,7 +41,6 @@ HideOnScroll.propTypes = {
 export default function HideAppBar(props) {
   return (
     <React.Fragment>
-      <CssBaseline />
       <HideOnScroll {...props}>
         <AppBar>
           <Toolbar style={styles.bar}>
