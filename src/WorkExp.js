@@ -49,8 +49,8 @@ const rows = [
         <i> Full time</i>
     </div>,
     <ul>
-        <li>Reduced # of customer escalations from 20 to 2 per month by migrating data models from old stack <i>[Airflow][DOMO]</i> to new <i>[Fivetran][BigQuery][dbt]</i></li>
-        <li>Cut # of incidents by half by setting up automatic tests both on a daily basis to proactively fix data quality issues and on code changes for continuous integration <i>[GitLab][dbt]</i></li>
+        <li>Reduced number of customer escalations from 20 to 2 per month by migrating data models from old stack <i>[Airflow][DOMO]</i> to new <i>[dbt][BigQuery][Fivetran]</i></li>
+        <li>Cut number of incidents by half by setting up automatic tests both on a daily basis to proactively fix data quality issues and on code changes for continuous integration <i>[dbt][GitLab CI]</i></li>
         <li>Increased analytics team impact by setting up a technical roadmap, recruiting 4 engineers, producing self-service documentation and upskilling via code reviews &amp; mentoring</li>
         <li>Served on-call rotations on 10+ data sources &amp; 150+ models</li>
     </ul>
@@ -64,9 +64,9 @@ const rows = [
         <i> Full time</i>
     </div>,
     <ul>
-        <li>Designed hierarchical Bayes estimation with choice-based conjoint research to understand customer behavior – saved $10M+ in portfolio &amp; pricing optimization</li>
+        <li>Saved $10M+ in portfolio &amp; pricing optimization by designing hierarchical Bayes estimation with choice-based conjoint research to understand customer behavior</li>
         <li>Used Machine Learning to provide quantitative &amp; qualitative recommendations based on customer insight</li>
-        <li>Automated processes to boost capabilities – optimized research designing from 5 days to 1 <i>[Python] [VBA]</i></li>
+        <li>Optimized research designing from 5 days to 1 through the automation of processes <i>[Python][VBA]</i></li>
     </ul>
     ),
   createData(
