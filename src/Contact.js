@@ -5,6 +5,8 @@ import EmailIcon from '@material-ui/icons/Email';
 import ResumeIcon from '@material-ui/icons/Description';
 import GitHubIcon from './Github.js';
 import NodeJsIcon from './images/nodejs.png';
+import ReactIcon from './images/react-full.png';
+import MaterialUIIcon from './images/material-ui.png';
 
 const styles = {
     icons: {
@@ -57,8 +59,10 @@ export default function Contact(){
                 </Tooltip>
             </Container>
             <Container style={styles.tech}>
-                <p>Powered by</p>
+                <p>Developed using</p>
                 <img src={NodeJsIcon} style={styles.node} alt="NodeJs icon"/>
+                <img src={ReactIcon} style={styles.node} alt="React icon"/>
+                <img src={MaterialUIIcon} style={styles.node} alt="Material UI icon"/>
             </Container>    
         </Container>
     )
