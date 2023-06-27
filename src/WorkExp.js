@@ -42,7 +42,7 @@ const rows = [
     ),
   createData(
     <a style={styles.img} href="https://www.gojob.com/" target="_blank" rel="noopener noreferrer" >
-        <img src={gojob} style={styles.img} alt="Gojob" />
+        <img src={gojob} style={styles.img} alt="Gojob logo" />
     </a>,
     <div>
         <p><b>Senior Analytics Engineer &amp; Data Engineer</b></p>
@@ -57,7 +57,7 @@ const rows = [
     ),
   createData(
     <a style={styles.img} href="https://www.loreal.com/" target="_blank" rel="noopener noreferrer" >
-        <img src={loreal} style={styles.img} alt="L'Oreal" />
+        <img src={loreal} style={styles.img} alt="L'Oreal logo" />
     </a>,
     <div>
         <p><b>Data Scientist &amp; Analyst</b></p>
@@ -71,7 +71,7 @@ const rows = [
     ),
   createData(
     <a style={styles.img} href="https://cybelangel.com/" target="_blank" rel="noopener noreferrer" >
-        <img src={cybelangel} style={styles.img} alt="CybelAngel" />
+        <img src={cybelangel} style={styles.img} alt="CybelAngel logo" />
     </a>,
     <div>
         <p><b>Business Analyst</b></p>
@@ -85,7 +85,7 @@ const rows = [
     ),
   createData(
     <a style={styles.img} href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer" >
-        <img src={gates} style={styles.img} alt="Gates Foundation" />
+        <img src={gates} style={styles.img} alt="Gates Foundation logo" />
     </a>,
     <div>
         <p><b>Data Science Consultant</b></p>
@@ -97,7 +97,7 @@ const rows = [
     </ul>),
   createData(
     <a style={styles.img} href="www.bluecloudventures.com/" target="_blank" rel="noopener noreferrer" >
-        <img src={bcv} style={styles.img} alt="Blue Cloud Ventures" />
+        <img src={bcv} style={styles.img} alt="Blue Cloud Ventures logo" />
     </a>,
     <div>
         <p><b>Data Science Consultant</b></p>
