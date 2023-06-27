@@ -18,6 +18,8 @@ Install node & npm following the [npm documentation](https://docs.npmjs.com/cli/
 brew install n
 n <version>
 ```
+**Tip**: to install the latest Long Time Support version, run `n lst`.
+Note: you might need to prepend `sudo` to ensure you have the right permissions.
 
 Then install yarn:
 ```
@@ -43,4 +45,4 @@ Once configure, push your changes to your website:
 yarn deploy
 ```
 
-Note: the above command has been set up using 2019 GitHub Pages documentation. You might need to update the script in your `package.json` or consider creating a [GitHub Action workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow).
+**Note**: the above command has been set up using 2019 GitHub Pages documentation. You might need to update the script in your `package.json` or consider creating a [GitHub Action workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow).
