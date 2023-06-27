@@ -16,7 +16,6 @@ const styles = {
         flexBasis: '20%',
         maxHeight: '80px',
         maxWidth: '150px',
-        // margin: '1% 5%',
     }
 }
 
