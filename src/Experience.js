@@ -10,9 +10,11 @@ import Volunteering from "./Volunteering.js";
 import SchoolIcon from '@material-ui/icons/School';
 import WorkIcon from '@material-ui/icons/BusinessCenter';
 import NatureIcon from '@material-ui/icons/Eco';
-import SportIcon from '@material-ui/icons/FitnessCenter';
+import SkillIcon from '@material-ui/icons/FitnessCenter';
 import ToolIcon from '@material-ui/icons/Build';
 import HeartIcon from '@material-ui/icons/Favorite';
+import SportIcon from '@mui/icons-material/SportsMartialArtsRounded';
+import MusicIcon from '@mui/icons-material/MusicNoteRounded';
 import './App.css';
 
 const styles = {
@@ -22,6 +24,7 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-around',
+        alignItems: 'center',
         maxHeight: '800px',
         margin: '0 auto',
     },
@@ -55,7 +58,12 @@ const styles = {
         alignItems: 'flex-start',
     },
     subtitle: {
+        display: 'flex',
+        alignItems: 'center',
         fontSize: '16px',
+    },
+    icon: {
+        marginRight: '5px',
     },
     tabs: {
         minWidth: '130px',
@@ -122,47 +130,47 @@ export default function Experience() {
                 className={classes.tabs}
                 style={styles.tabs}
             >
-                <Tab icon={<SchoolIcon />} label="Education" {...a11yProps(0)} />
-                <Tab icon={<WorkIcon />} label="Career" {...a11yProps(1)} />
-                <Tab icon={<NatureIcon />} label="Volunteering" {...a11yProps(2)} />
-                <Tab icon={<SportIcon />} label="Skills" {...a11yProps(3)} />
-                <Tab icon={<ToolIcon />} label="Projects" {...a11yProps(4)} />
+                <Tab icon={<WorkIcon />} label="Career" {...a11yProps(0)} />
+                <Tab icon={<SchoolIcon />} label="Education" {...a11yProps(1)} />
+                <Tab icon={<SkillIcon />} label="Skills" {...a11yProps(2)} />
+                <Tab icon={<ToolIcon />} label="Projects" {...a11yProps(3)} />
+                <Tab icon={<NatureIcon />} label="Volunteering" {...a11yProps(4)} />
                 <Tab icon={<HeartIcon />} label="Passions" {...a11yProps(5)} />
             </Tabs>
             <TabPanel value={value} index={0} style={styles.panel}>
                 <Container style={styles.container}>
-                    <Education />
-                </Container>            
-            </TabPanel>
-            <TabPanel value={value} index={1} style={styles.panel}>
-                <Container style={styles.container}>
                     <WorkExp />
                 </Container>
             </TabPanel>
-            <TabPanel value={value} index={2} style={styles.panel}>
+            <TabPanel value={value} index={1} style={styles.panel}>
                 <Container style={styles.container}>
-                    <Volunteering />
-                </Container>
+                    <Education />
+                </Container>            
             </TabPanel>
-            <TabPanel value={value} index={3} style={styles.panel}>
+            <TabPanel value={value} index={2} style={styles.panel}>
                 <Container style={styles.container}>
                     <Skills />
                 </Container>
             </TabPanel>
-            <TabPanel value={value} index={4} style={styles.panel}>
+            <TabPanel value={value} index={3} style={styles.panel}>
                 <Container style={styles.container}>
                     <Projects />
                 </Container>
             </TabPanel>
+            <TabPanel value={value} index={4} style={styles.panel}>
+                <Container style={styles.container}>
+                    <Volunteering />
+                </Container>
+            </TabPanel>
             <TabPanel value={value} index={5} style={styles.panel}>
                 <Container style={styles.container}>
-                    <p style={styles.subtitle}>Music</p>
+                    <p style={styles.subtitle}><MusicIcon style={styles.icon} />Music</p>
                     <div style={styles.root}>
                         <Chip variant='outlined' label='Violin' style={styles.chip} />
                         <Chip variant='outlined' label='Piano' style={styles.chip} />
                         <Chip variant='outlined' label='Singing' style={styles.chip} />
                     </div>
-                    <p style={styles.subtitle}>Sport</p>
+                    <p style={styles.subtitle}><SportIcon style={styles.icon} />Sport</p>
                     <div style={styles.root}>
                         <Chip variant='outlined' label='Hiking' style={styles.chip} />
                         <Chip variant='outlined' label='Rowing' style={styles.chip} />

@@ -3,20 +3,27 @@ import { Avatar, Chip } from '@material-ui/core';
 import python from './images/python.png';
 import sql from './images/sql.png';
 import bigquery from './images/bigquery.png';
+import snowflake from './images/snowflake.png';
 import dbt from './images/dbt.png';
 import airflow from './images/airflow.png';
 import fivetran from './images/fivetran.png';
+import stitch from './images/stitch.png';
 import git from './images/git.png';
+import github from './images/github.png';
 import gitlab from './images/gitlab.png';
 import docker from './images/docker.png';
+import looker from './images/looker.png';
 import powerbi from './images/powerbi.png';
 import tableau from './images/tableau.png';
+import domo from './images/domo.png';
 import excel from './images/excel.png';
 import vba from './images/vba.png';
 import postgresql from './images/postgresql.png';
 import mongodb from './images/mongodb.png';
 import salesforce from './images/salesforce.png';
 import hubspot from './images/hubspot.webp';
+import zendesk from './images/zendesk.png';
+import pendo from './images/pendo.jpeg';
 import ga from './images/google_analytics.webp';
 import airtable from './images/airtable.png';
 import pubsub from './images/pubsub.svg';
@@ -55,10 +62,10 @@ export default function Skills() {
                 <p style={styles.name}>Programming</p>
                 <div style={styles.root}>
                     <Chip variant='outlined' label='Python' style={styles.chip} avatar={
-                        <Avatar alt="python" src={python} style={styles.icon} />
+                        <Avatar alt="Python logo" src={python} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='SQL' style={styles.chip} avatar={
-                        <Avatar alt="sql" src={sql} style={styles.icon} />
+                        <Avatar alt="SQL logo" src={sql} style={styles.icon} />
                     } />
                 </div>
             </div>
@@ -66,16 +73,22 @@ export default function Skills() {
                 <p style={styles.name}>Analytics engineering &amp; data pipelines</p>
                 <div style={styles.root}>
                     <Chip variant='outlined' label='dbt' style={styles.chip} avatar={
-                        <Avatar alt="dbt" src={dbt} style={styles.icon} />
+                        <Avatar alt="dbt logo" src={dbt} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='BigQuery' style={styles.chip} avatar={
-                        <Avatar alt="bigquery" src={bigquery} style={styles.icon} />
+                        <Avatar alt="BigQuery logo" src={bigquery} style={styles.icon} />
+                    } />
+                    <Chip variant='outlined' label='Snowflake' style={styles.chip} avatar={
+                        <Avatar alt="Snowflake logo" src={snowflake} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='Airflow' style={styles.chip} avatar={
-                        <Avatar alt="airflow" src={airflow} style={styles.icon} />
+                        <Avatar alt="Airflow logo" src={airflow} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='Fivetran' style={styles.chip} avatar={
-                        <Avatar alt="fivetran" src={fivetran} style={styles.icon} />
+                        <Avatar alt="Fivetran logo" src={fivetran} style={styles.icon} />
+                    } />
+                    <Chip variant='outlined' label='Stitch' style={styles.chip} avatar={
+                        <Avatar alt="Stitch logo" src={stitch} style={styles.icon} />
                     } />
                 </div>
             </div>
@@ -83,30 +96,39 @@ export default function Skills() {
                 <p style={styles.name}>DevOps</p>
                 <div style={styles.root}>
                     <Chip variant='outlined' label='git' style={styles.chip} avatar={
-                        <Avatar alt="git" src={git} style={styles.icon} />
+                        <Avatar alt="git logo" src={git} style={styles.icon} />
+                    } />
+                    <Chip variant='outlined' label='GitHub Actions' style={styles.chip} avatar={
+                        <Avatar alt="GitHub logo" src={github} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='GitLab CI' style={styles.chip} avatar={
-                        <Avatar alt="gitlab" src={gitlab} style={styles.icon} />
+                        <Avatar alt="Gitlab logo" src={gitlab} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='Docker' style={styles.chip} avatar={
-                        <Avatar alt="docker" src={docker} style={styles.icon} />
+                        <Avatar alt="Docker logo" src={docker} style={styles.icon} />
                     } />
                 </div>
             </div>
             <div style={styles.category}>
                 <p style={styles.name}>Data Visualization &amp; Analysis</p>
                 <div style={styles.root}>
+                    <Chip variant='outlined' label='Looker' style={styles.chip} avatar={
+                        <Avatar alt="Looker logo" src={looker} style={styles.icon} />
+                    } />
                     <Chip variant='outlined' label='Power BI' style={styles.chip} avatar={
-                        <Avatar alt="powerbi" src={powerbi} style={styles.icon} />
+                        <Avatar alt="PowerBI logo" src={powerbi} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='Tableau' style={styles.chip} avatar={
-                        <Avatar alt="tableau" src={tableau} style={styles.icon} />
+                        <Avatar alt="Tableau logo" src={tableau} style={styles.icon} />
+                    } />
+                    <Chip variant='outlined' label='DOMO' style={styles.chip} avatar={
+                        <Avatar alt="DOMO logo" src={domo} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='Excel' style={styles.chip} avatar={
-                        <Avatar alt="excel" src={excel} style={styles.icon} />
+                        <Avatar alt="Excel logo" src={excel} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='VBA' style={styles.chip} avatar={
-                        <Avatar alt="vba" src={vba} style={styles.icon} />
+                        <Avatar alt="VBA logo" src={vba} style={styles.icon} />
                     } />  
                 </div>
             </div>
@@ -114,25 +136,31 @@ export default function Skills() {
                 <p style={styles.name}>Data sourcing (databases, events &amp; SaaS)</p>
                 <div style={styles.root}>
                     <Chip variant='outlined' label='PostgreSQL' style={styles.chip} avatar={
-                        <Avatar alt="postgresql" src={postgresql} style={styles.icon} />
+                        <Avatar alt="PostgreSQL logo" src={postgresql} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='MongoDB' style={styles.chip} avatar={
-                        <Avatar alt="mongodb" src={mongodb} style={styles.icon} />
+                        <Avatar alt="MongoDB logo" src={mongodb} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='Salesforce' style={styles.chip} avatar={
-                        <Avatar alt="salesforce" src={salesforce} style={styles.icon} />
+                        <Avatar alt="Salesforce logo" src={salesforce} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='HubSpot' style={styles.chip} avatar={
-                        <Avatar alt="hubspot" src={hubspot} style={styles.icon} />
+                        <Avatar alt="HubSpot logo" src={hubspot} style={styles.icon} />
+                    } />
+                    <Chip variant='outlined' label='Zendesk' style={styles.chip} avatar={
+                        <Avatar alt="Zendesk logo" src={zendesk} style={styles.icon} />
+                    } />
+                    <Chip variant='outlined' label='Pendo' style={styles.chip} avatar={
+                        <Avatar alt="Pendo logo" src={pendo} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='Google Analytics' style={styles.chip} avatar={
-                        <Avatar alt="ga" src={ga} style={styles.icon} />
+                        <Avatar alt="Google Analytics logo" src={ga} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='AirTable' style={styles.chip} avatar={
-                        <Avatar alt="aitable" src={airtable} style={styles.icon} />
+                        <Avatar alt="Airtable logo" src={airtable} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='PubSub' style={styles.chip} avatar={
-                        <Avatar alt="pubsub" src={pubsub} style={styles.icon} />
+                        <Avatar alt="PubSub logo" src={pubsub} style={styles.icon} />
                     } />
                 </div>
             </div>
@@ -140,16 +168,16 @@ export default function Skills() {
                 <p style={styles.name}>Web Development (side projects)</p>
                 <div style={styles.root}>
                     <Chip variant='outlined' label='HTML' style={styles.chip} avatar={
-                        <Avatar alt="html" src={html} style={styles.icon} />
+                        <Avatar alt="HTML logo" src={html} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='CSS' style={styles.chip} avatar={
-                        <Avatar alt="css" src={css} style={styles.icon} />
+                        <Avatar alt="CSS logo" src={css} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='Javascript' style={styles.chip} avatar={
-                        <Avatar alt="javascript" src={js} style={styles.icon} />
+                        <Avatar alt="Javascript logo" src={js} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='React' style={styles.chip} avatar={
-                        <Avatar alt="react" src={react} style={styles.icon} />
+                        <Avatar alt="React logo" src={react} style={styles.icon} />
                     } />
                 </div>
             </div>

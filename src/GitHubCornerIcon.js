@@ -4,10 +4,8 @@ const styles = {
     repo: {
         fill: '#fff',
         position: 'absolute',
-        top: '71px',
-        border: 0,
+        top: 0,
         right: 0,
-        zIndex: 1000,
     },
     path: {
         transformOrigin: '130px 106px',

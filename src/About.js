@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider, Button, Container } from '@material-ui/core';
+import { Divider, Button } from '@material-ui/core';
 import profile from './images/profile.png';
 import GitHubCornerIcon from './GitHubCornerIcon.js';
 import './animation.css';
@@ -10,6 +10,7 @@ const styles = {
         justifyContent: 'space-around',
         padding: '3%',
         alignItems: 'center',
+        position: 'relative',
     },
     img: {
         maxWidth:'75%',
@@ -46,7 +47,7 @@ const scrollToExperience = () =>
 
 export default function About() {
     return(
-        <Container id="about" style={styles.container}>
+        <div id="about" style={styles.container}>
             <a href="https://github.com/EstelleBarnoud/site-perso/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -55,7 +56,7 @@ export default function About() {
                 <GitHubCornerIcon />
             </a>
             <div style={styles.box}>
-                <img src={profile} className="App-profile" style={styles.img} alt="profile" />
+                <img src={profile} className="App-profile" style={styles.img} alt="Profile" />
             </div>
             <div style={styles.box}>
                 <div style={styles.description}>
@@ -77,6 +78,6 @@ export default function About() {
                     Learn more
                 </Button>
             </div>
-        </Container>
+        </div>
     )
 }

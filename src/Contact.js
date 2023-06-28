@@ -1,10 +1,12 @@
 import React from 'react';
-import { Container, IconButton, Tooltip } from '@material-ui/core';
+import { Container, Divider, IconButton, Tooltip } from '@material-ui/core';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import ResumeIcon from '@material-ui/icons/Description';
 import GitHubIcon from './Github.js';
 import NodeJsIcon from './images/nodejs.png';
+import ReactIcon from './images/react-full.png';
+import MaterialUIIcon from './images/material-ui.png';
 
 const styles = {
     icons: {
@@ -18,13 +20,14 @@ const styles = {
     },
     node: {
         maxHeight: '40px',
+        maxWidth: '130px',
         margin: '0% 5%',
     },
     tech: {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: '2%',
+        margin: '3%',
     },
 }
 
@@ -56,9 +59,12 @@ export default function Contact(){
                     </IconButton>
                 </Tooltip>
             </Container>
+            <Divider />
             <Container style={styles.tech}>
-                <p>Powered by</p>
+                <p>Developed using</p>
                 <img src={NodeJsIcon} style={styles.node} alt="NodeJs icon"/>
+                <img src={ReactIcon} style={styles.node} alt="React icon"/>
+                <img src={MaterialUIIcon} style={styles.node} alt="Material UI icon"/>
             </Container>    
         </Container>
     )
