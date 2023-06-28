@@ -3,20 +3,27 @@ import { Avatar, Chip } from '@material-ui/core';
 import python from './images/python.png';
 import sql from './images/sql.png';
 import bigquery from './images/bigquery.png';
+import snowflake from './images/snowflake.png';
 import dbt from './images/dbt.png';
 import airflow from './images/airflow.png';
 import fivetran from './images/fivetran.png';
+import stitch from './images/stitch.png';
 import git from './images/git.png';
+import github from './images/github.png';
 import gitlab from './images/gitlab.png';
 import docker from './images/docker.png';
+import looker from './images/looker.png';
 import powerbi from './images/powerbi.png';
 import tableau from './images/tableau.png';
+import domo from './images/domo.png';
 import excel from './images/excel.png';
 import vba from './images/vba.png';
 import postgresql from './images/postgresql.png';
 import mongodb from './images/mongodb.png';
 import salesforce from './images/salesforce.png';
 import hubspot from './images/hubspot.webp';
+import zendesk from './images/zendesk.png';
+import pendo from './images/pendo.jpeg';
 import ga from './images/google_analytics.webp';
 import airtable from './images/airtable.png';
 import pubsub from './images/pubsub.svg';
@@ -71,11 +78,17 @@ export default function Skills() {
                     <Chip variant='outlined' label='BigQuery' style={styles.chip} avatar={
                         <Avatar alt="bigquery" src={bigquery} style={styles.icon} />
                     } />
+                    <Chip variant='outlined' label='Snowflake' style={styles.chip} avatar={
+                        <Avatar alt="snowflake" src={snowflake} style={styles.icon} />
+                    } />
                     <Chip variant='outlined' label='Airflow' style={styles.chip} avatar={
                         <Avatar alt="airflow" src={airflow} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='Fivetran' style={styles.chip} avatar={
                         <Avatar alt="fivetran" src={fivetran} style={styles.icon} />
+                    } />
+                    <Chip variant='outlined' label='Stitch' style={styles.chip} avatar={
+                        <Avatar alt="stitch" src={stitch} style={styles.icon} />
                     } />
                 </div>
             </div>
@@ -84,6 +97,9 @@ export default function Skills() {
                 <div style={styles.root}>
                     <Chip variant='outlined' label='git' style={styles.chip} avatar={
                         <Avatar alt="git" src={git} style={styles.icon} />
+                    } />
+                    <Chip variant='outlined' label='GitHub Actions' style={styles.chip} avatar={
+                        <Avatar alt="github" src={github} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='GitLab CI' style={styles.chip} avatar={
                         <Avatar alt="gitlab" src={gitlab} style={styles.icon} />
@@ -96,11 +112,17 @@ export default function Skills() {
             <div style={styles.category}>
                 <p style={styles.name}>Data Visualization &amp; Analysis</p>
                 <div style={styles.root}>
+                    <Chip variant='outlined' label='Looker' style={styles.chip} avatar={
+                        <Avatar alt="looker" src={looker} style={styles.icon} />
+                    } />
                     <Chip variant='outlined' label='Power BI' style={styles.chip} avatar={
                         <Avatar alt="powerbi" src={powerbi} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='Tableau' style={styles.chip} avatar={
                         <Avatar alt="tableau" src={tableau} style={styles.icon} />
+                    } />
+                    <Chip variant='outlined' label='DOMO' style={styles.chip} avatar={
+                        <Avatar alt="domo" src={domo} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='Excel' style={styles.chip} avatar={
                         <Avatar alt="excel" src={excel} style={styles.icon} />
@@ -124,6 +146,12 @@ export default function Skills() {
                     } />
                     <Chip variant='outlined' label='HubSpot' style={styles.chip} avatar={
                         <Avatar alt="hubspot" src={hubspot} style={styles.icon} />
+                    } />
+                    <Chip variant='outlined' label='Zendesk' style={styles.chip} avatar={
+                        <Avatar alt="zendesk" src={zendesk} style={styles.icon} />
+                    } />
+                    <Chip variant='outlined' label='Pendo' style={styles.chip} avatar={
+                        <Avatar alt="pendo" src={pendo} style={styles.icon} />
                     } />
                     <Chip variant='outlined' label='Google Analytics' style={styles.chip} avatar={
                         <Avatar alt="ga" src={ga} style={styles.icon} />
