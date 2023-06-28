@@ -56,7 +56,7 @@ export default function About() {
                 <GitHubCornerIcon />
             </a>
             <div style={styles.box}>
-                <img src={profile} className="App-profile" style={styles.img} alt="Profile picture" />
+                <img src={profile} className="App-profile" style={styles.img} alt="Profile" />
             </div>
             <div style={styles.box}>
                 <div style={styles.description}>
