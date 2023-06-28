@@ -40,13 +40,17 @@ yarn start
 This will open up a browser page with the compiled code.
 
 ### Deploy
-Push the project to production by:
+Push the project to production with one of the following method:
 - [free] [using GitHub Pages hosting](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site) — ⚠️Your repository must be named: `<user>.github.io`
-- [used for this repository] [setting up your own subdomain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain) — ⚠️You must have a registered domain name. You can buy one in any domain name registrar, for example on [Google Domains](https://domains.google.com). 
+- [used for this repository] [setting up your own subdomain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain) — ⚠️You must have a registered domain name. You can buy one in any domain name registrar, for example on [Google Domains](https://domains.google.com).  
+  You can then specify your subdomain and check the status & location of your deploy in your repository Settings > Pages.
+  ![Repository settings for GitHub Pages](github-pages-settings.png)
+  **Note**: It can take up to a minute for the update to show.
 
-Once configure, push your changes to your website:
+
+Once configured, push your changes to your website:
 ```
 yarn deploy
 ```
 
-**Note**: the above command has been set up using 2019 GitHub Pages documentation. You might need to update the script in your `package.json` or consider creating a [GitHub Action workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow).
+**Tip**: you can also consider creating a [GitHub Action workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow) to deploy your website automatically.
