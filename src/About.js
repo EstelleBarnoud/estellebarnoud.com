@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider, Button, Container } from '@material-ui/core';
+import { Divider, Button } from '@material-ui/core';
 import profile from './images/profile.png';
 import GitHubCornerIcon from './GitHubCornerIcon.js';
 import './animation.css';
