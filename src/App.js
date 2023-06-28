@@ -1,5 +1,5 @@
 import React from 'react';
-import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import AppBar from './AppBar.js';
 import Contact from './Contact.js';
 import About from './About.js';
@@ -20,7 +20,7 @@ const theme = createMuiTheme({
 
 function App() {
   return (
-    <MuiThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
       <div className="App">
         <header className="App-header">
           <AppBar />
@@ -29,7 +29,7 @@ function App() {
         <Experience />
         <Contact />
       </div>
-    </MuiThemeProvider>
+    </ThemeProvider>
   );
 }
 
