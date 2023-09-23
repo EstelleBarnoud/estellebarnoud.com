@@ -2,7 +2,7 @@
 
 > ‼️ This website has been revamped into [estellewolski.vercel.app](https://estellewolski.vercel.app/). Please visit the [new repository](https://github.com/EstelleBarnoud/estellewolski.com) instead.
 
-Self-hosted [portfolio website](https://estellebarnoud.com/) including a small introduction, experience, skills & interests.
+Self-hosted [portfolio website]([https://estellebarnoud.com/](https://estellebarnoud.github.io/estellebarnoud.com/)) including a small introduction, experience, skills & interests.
 
 ### Technologies used
 
