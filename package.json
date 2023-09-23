@@ -40,7 +40,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://estellebarnoud.com/",
+  "homepage": ".",
   "devDependencies": {
     "gh-pages": "^2.1.1"
   }
